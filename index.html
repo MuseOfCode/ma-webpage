@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[Fighter Name] — Professional Debut</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link href="styles/root.css" rel="stylesheet" />
+  <link href="styles/critical.css" rel="stylesheet" />
+  <link href="styles/local.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <!-- ─── Nav ─────────────────────────────────────────────────── -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">
+      <img src="logo.png" alt="Logo with the initials M and A" height="36" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+      <span class="nav-logo-fallback">Mitchell asare</span>
+    </a>
+ 
+    <!-- Desktop nav links (hidden on mobile) -->
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#fight">Fight night</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+ 
+    <a href="#fight" class="nav-ticket" id="nav-ticket-btn">Notify me</a>
+ 
+    <!-- CS-style toggle (mobile only) -->
+    <button class="cs-toggle" id="cs-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="cs-ul-wrapper" aria-haspopup="menu">
+      <span class="cs-box" aria-hidden="true">
+        <span class="cs-line cs-line1"></span>
+        <span class="cs-line cs-line2"></span>
+        <span class="cs-line cs-line3"></span>
+      </span>
+    </button>
+ 
+    <!-- CS ul-wrapper — full screen on mobile only -->
+    <div class="cs-ul-wrapper" id="cs-ul-wrapper">
+      <ul class="cs-ul">
+        <li class="cs-li"><a href="#about"   class="cs-li-link">About</a></li>
+        <li class="cs-li"><a href="#fight"   class="cs-li-link">Fight night</a></li>
+        <li class="cs-li"><a href="#gallery" class="cs-li-link">Gallery</a></li>
+        <li class="cs-li"><a href="#contact" class="cs-li-link">Contact</a></li>
+      </ul>
+      <div class="cs-menu-footer">
+        <a href="#fight" class="cs-menu-notify" id="menu-notify-btn">Notify me</a>
+        <div class="cs-menu-socials">
+          <a href="YOUR_INSTAGRAM_URL" class="cs-menu-social-link" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="YOUR_TIKTOK_URL" class="cs-menu-social-link" aria-label="TikTok" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          </a>
+          <a href="YOUR_YOUTUBE_URL" class="cs-menu-social-link" aria-label="YouTube" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+        <div class="cs-menu-creds">
+          <span>6x London Champion</span>
+          <span class="dot">·</span>
+          <span>70+ fights</span>
+          <span class="dot">·</span>
+          <span>Pro debut</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- ─── 01 · HERO ────────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-bg">
+      <!-- <img src="assets/images/hero-bg.png"> -->
+         
+    </div>
+ 
+    <div class="hero-content">
+      <div class="hero-tag">Professional debut</div>
+      <h1 class="hero-name">MITCHELL<br>ASARE</h1>
+      <!-- <br>"ANANSI" -->
+      <div class="hero-divider"></div>
+ 
+      <div class="countdown" id="countdown">
+        <div class="countdown-unit">
+          <span class="countdown-num" id="cd-days">00</span>
+          <span class="countdown-label">Days</span>
+        </div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-unit">
+          <span class="countdown-num" id="cd-hours">00</span>
+          <span class="countdown-label">Hours</span>
+        </div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-unit">
+          <span class="countdown-num" id="cd-mins">00</span>
+          <span class="countdown-label">Mins</span>
+        </div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-unit">
+          <span class="countdown-num" id="cd-secs">00</span>
+          <span class="countdown-label">Secs</span>
+        </div>
+      </div>
+ 
+      <!-- Smart ticket block — controlled by TICKETS_LIVE in JS -->
+      <div id="hero-ticket-block"></div>
+    </div>
+ 
+    <div class="hero-creds">
+      <span class="hero-cred-item">6x London Champion</span>
+      <span class="hero-cred-dot"></span>
+      <span class="hero-cred-item">70+ fights</span>
+      <span class="hero-cred-dot"></span>
+      <span class="hero-cred-item">Int. Box Cup Silver</span>
+      <span class="hero-cred-dot"></span>
+      <span class="hero-cred-item">Elite ABA Finalist</span>
+    </div>
+ 
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+    <!-- Social strip — right side of hero -->
+    <div class="hero-social-strip">
+      <a href="YOUR_INSTAGRAM_URL" class="hero-social-link" aria-label="Instagram" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <div class="hero-social-line"></div>
+      <a href="YOUR_TIKTOK_URL" class="hero-social-link" aria-label="TikTok" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+      </a>
+      <div class="hero-social-line"></div>
+      <a href="YOUR_YOUTUBE_URL" class="hero-social-link" aria-label="YouTube" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+      </a>
+    </div>
+
+        <!-- Social row — mobile only, sits below hero creds
+    <div class="hero-social-mobile">
+      <a href="#" class="hero-social-mobile-link" aria-label="Instagram" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="#" class="hero-social-mobile-link" aria-label="TikTok" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+      </a>
+      <a href="#" class="hero-social-mobile-link" aria-label="YouTube" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+      </a> -->
+  </section>
+ 
+  <!-- ─── 02 · STATS BAR ───────────────────────────────────────── -->
+  <section id="stats">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <span class="stat-num">70+</span>
+        <span class="stat-label">Amateur fights</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">6×</span>
+        <span class="stat-label">London Champion</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">8</span>
+        <span class="stat-label">Years competing</span>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ─── 03 · ABOUT ───────────────────────────────────────────── -->
+  <section id="about">
+    <p class="section-eyebrow">The fighter</p>
+    <div class="about-grid">
+ 
+      <div class="video-wrap">
+        
+<video
+    class="scroll-video"
+    playsinline
+    preload="metadata"
+    loop>
+
+    <source
+        src="https://scontent-bru2-1.cdninstagram.com/o1/v/t16/f2/m69/AQOPk3YukCGVgoIJ9GtJs90voD-G_pd5Fmw_PX4xig84vmDv9WxiRPHjspd9v8_CtV6j-ijo9WWp0WQ2zSXEnWoC.mp4?strext=1&_nc_cat=109&_nc_sid=5e9851&_nc_ht=scontent-bru2-1.cdninstagram.com&_nc_ohc=vW71YqUKp_EQ7kNvwHnJbxV&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uSUdUVi5DMy4xMjgwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6NzU2NzU0NzA1NTE4NzExLCJhc3NldF9hZ2VfZGF5cyI6MTQwMSwidmlfdXNlY2FzZV9pZCI6MTAxNDUsImR1cmF0aW9uX3MiOjE1LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=990e70116ef4d215&_nc_vs=HBksFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HUFZSYlJHdzNBdUE3eG9CQURzcW9EazZQRklaYnZWQkFBQUYVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HRTh5Y0JGcUloQ3FGM1lBQURaRHZhQnlVUGxqYnZWQkFBQUYVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm7sG89vWQ2AIVAigCQzMsF0AuRBiTdLxqGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHXsB2XCngEA&_nc_gid=k-R4Z7OUIhJVrPMRXvM3Bw&_nc_zt=28&_nc_ss=7a3ba&oh=00_Af5AVfoQHSHR0vDuujIO0siNr8XJQZWe7PyoJMyP0zLS2A&oe=6A038F37"
+        type="video/mp4">
+
+</video>
+                 
+       
+        <div class="video-placeholder">
+          <!-- <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M20 16L34 24L20 32V16Z" fill="currentColor"/>
+          </svg> -->
+          <!-- <span>Training video</span> -->
+        </div>
+      </div>
+ 
+      <div class="about-text">
+        <h2>Made through discipline.<br>Born for this.</h2>
+        <p>
+          <!-- Replace with his real story -->
+          Mitchell Asare has spent eight years earning his place in professional boxing; not through luck but through relentless work, discipline and an amateur career that speaks for itself. Six London titles. An international silver medal. An Elite ABA Final.
+        </p>
+        <div class="pull-quote">
+          <!-- Replace with a real quote from him -->
+          "You have to love boxing — because once you’re in that ring, you’re fighting for your life."
+        </div>
+        <p>
+          Now, turning professional, he steps into a new chapter. Everything that came before was training. This is the beginning.
+        </p>
+        <div class="cred-list">
+          <div class="cred-list-item">6x London Amateur Champion</div>
+          <div class="cred-list-item">International Box Cup — Silver</div>
+          <div class="cred-list-item">Elite ABA Finalist</div>
+          <div class="cred-list-item">70+ amateur contests</div>
+        </div>
+      </div>
+ 
+    </div>
+  </section>
+ 
+  <!-- ─── 04 · FIGHT ────────────────────────────────────────────── -->
+  <section id="fight">
+    <div class="fight-inner">
+      <p class="section-eyebrow">Fight night</p>
+      <div class="fight-grid">
+ 
+        <div class="fight-details">
+          <h2>Professional<br>debut</h2>
+ 
+          <div class="fight-countdown" id="fight-countdown">
+            <div class="fight-count-unit">
+              <div class="fight-count-num" id="fcd-days">00</div>
+              <div class="fight-count-label">Days</div>
+            </div>
+            <div class="fight-count-unit">
+              <div class="fight-count-num" id="fcd-hours">00</div>
+              <div class="fight-count-label">Hours</div>
+            </div>
+            <div class="fight-count-unit">
+              <div class="fight-count-num" id="fcd-mins">00</div>
+              <div class="fight-count-label">Mins</div>
+            </div>
+            <div class="fight-count-unit">
+              <div class="fight-count-num" id="fcd-secs">00</div>
+              <div class="fight-count-label">Secs</div>
+            </div>
+          </div>
+ 
+          <div class="fight-meta">
+            <div class="fight-meta-item">
+              <span class="fight-meta-label">Date</span>
+              <span class="fight-meta-value">27th June 2026</span>
+            </div>
+            <div class="fight-meta-divider"></div>
+            <div class="fight-meta-item">
+              <span class="fight-meta-label">Doors open</span>
+              <span class="fight-meta-value">18:00 BST</span>
+            </div>
+            <div class="fight-meta-divider"></div>
+            <div class="fight-meta-item">
+              <span class="fight-meta-label">Venue</span>
+              <span class="fight-meta-value">???, London</span>
+            </div>
+            <div class="fight-meta-divider"></div>
+            <div class="fight-meta-item">
+              <span class="fight-meta-label">Tickets</span>
+              <span class="fight-meta-value" id="fight-ticket-status">Dropping soon — limited capacity</span>
+            </div>
+          </div>
+ 
+          <!-- Smart ticket block — controlled by TICKETS_LIVE in JS -->
+          <div id="fight-ticket-block"></div>
+        </div>
+ 
+        <div class="map-wrap">
+          <!--
+            Replace with Google Maps embed:
+            <iframe
+              src="https://www.google.com/maps/embed?pb=YOUR_EMBED_URL"
+              width="100%" height="100%" style="border:0;"
+              allowfullscreen loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          -->
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.2">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+            <circle cx="12" cy="9" r="2.5"/>
+          </svg>
+          <span>Venue map</span>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ─── 05 · GALLERY ─────────────────────────────────────────── -->
+  <section id="gallery">
+    <p class="section-eyebrow">Gallery</p>
+    <div class="gallery-grid">
+      <!-- Replace each item with: <img src="your-photo.jpg" alt="description" /> -->
+      <div class="gallery-item"><div class="gallery-placeholder">Photo 1</div><img src="assets/images/gallery/pic4.jpg"></div>
+      <div class="gallery-item"><div class="gallery-placeholder">Photo 2</div><img src="assets/images/gallery/pic5.jpg"></div>
+      <div class="gallery-item"><div class="gallery-placeholder">Photo 3</div><img src="assets/images/gallery/pic3.jpg"></div>
+      <div class="gallery-item"><div class="gallery-placeholder">Photo 4</div><img src="assets/images/gallery/pic4.jpg"></div>
+      <div class="gallery-item"><div class="gallery-placeholder">Photo 5</div><img src="assets/images/gallery/pic5.jpg"></div>
+      <div class="gallery-item"><div class="gallery-placeholder">Photo 6</div><img src="assets/images/gallery/pic3.jpg"></div>
+    </div>
+  </section>
+ 
+  <!-- ─── 06 · SOCIAL ───────────────────────────────────────────── -->
+  <section id="social">
+    <div class="social-inner">
+      <p class="section-eyebrow">Follow the journey</p>
+      <h2>Stay in the corner</h2>
+      <p>Training updates, fight news and behind the scenes</p>
+ 
+      <div class="social-links">
+        <a href="YOUR_INSTAGRAM_URL" class="social-link" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          Instagram
+        </a>
+        <a href="YOUR_TIKTOK_URL" class="social-link" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          TikTok
+        </a>
+        <a href="YOUR_YOUTUBE_URL" class="social-link" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+          YouTube
+        </a>
+      </div>
+ 
+      <form class="email-form" onsubmit="handleEmail(event)">
+        <input type="email" placeholder="Your email address" required />
+        <button type="submit">Notify me</button>
+      </form>
+    </div>
+  </section>
+ 
+  <!-- ─── 07 · CONTACT ────────────────────────────────────────── -->
+  <section id="contact">
+    <div class="contact-inner">
+      <p class="section-eyebrow">Work with him</p>
+      <h2>Get in touch</h2>
+      <p>For press, sponsorship and booking enquiries</p>
+ 
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="contact-row">
+          <input type="text"  name="name"  placeholder="Your name"      required />
+          <input type="email" name="email" placeholder="Email address"  required />
+        </div>
+ 
+        <input type="text" name="organisation" placeholder="Organisation (optional)" />
+ 
+        <div class="select-wrap">
+          <select name="enquiry" required>
+            <option value="" disabled selected>Type of enquiry</option>
+            <option value="press">Press</option>
+            <option value="sponsorship">Sponsorship</option>
+            <option value="booking">Booking / event appearance</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+ 
+        <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+ 
+        <button type="submit" class="btn-primary" id="contact-submit">Send message</button>
+ 
+        <div class="contact-success" id="contact-success">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Message sent — we'll be in touch shortly.
+        </div>
+      </form>
+    </div>
+  </section>
+ 
+  <!-- ─── Footer ───────────────────────────────────────────────── -->
+  <footer>
+    <p>&copy; 2026 Mitchell Asare. All rights reserved.</p>
+    <p>Professional debut · London</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+    /* ─── 01 · HERO ────────────────────────────────────────────── */
+    #hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      min-height: 700px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: var(--black);
+      /* Replace with: background-image: url('your-photo.jpg'); background-size: cover; background-position: center top; */
+    }
+
+    /* Grain texture overlay */
+    .hero-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      opacity: 0.4;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    /* Dark vignette */
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at center, transparent 30%, rgba(0,0,0,0.7) 100%),
+        linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, transparent 40%, transparent 60%, rgba(0,0,0,0.95) 100%);
+      z-index: 2;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      animation: heroFadeUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    @keyframes heroFadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-tag {
+      font-size: 0.62rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid rgba(74,143,170,0.35);
+      padding: 0.35rem 1rem;
+      border-radius: 2px;
+      margin-bottom: 1.5rem;
+      animation: heroFadeUp 1.2s 0.1s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .hero-name {
+      font-family: var(--font-display);
+      font-size: clamp(5rem, 14vw, 11rem);
+      line-height: 0.88;
+      letter-spacing: 0.06em;
+      color: var(--white);
+      animation: heroFadeUp 1.2s 0.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .hero-divider {
+      width: 40px;
+      height: 1px;
+      background: var(--border);
+      margin: 1.8rem 0;
+      animation: heroFadeUp 1.2s 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    /* ── Countdown ── */
+    .countdown {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      animation: heroFadeUp 1.2s 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .countdown-unit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .countdown-num {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      letter-spacing: 0.06em;
+      line-height: 1;
+      color: var(--white);
+      min-width: 2ch;
+      text-align: center;
+    }
+
+    .countdown-sep {
+      font-family: var(--font-display);
+      font-size: 2.4rem;
+      color: var(--border);
+      line-height: 1;
+      padding-bottom: 1.4rem;
+      align-self: flex-end;
+    }
+
+    .countdown-label {
+      font-size: 0.58rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ── Ticket CTA ── */
+    .btn-primary {
+      display: inline-block;
+      font-size: 0.7rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--black);
+      background: var(--white);
+      padding: 1rem 2.8rem;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: background 0.25s, color 0.25s, transform 0.2s;
+      animation: heroFadeUp 1.2s 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent);
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    /* ── Credential strip at bottom of hero ── */
+    .hero-creds {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 0; right: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      animation: heroFadeUp 1.2s 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .hero-cred-item {
+      font-size: 0.6rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .hero-cred-dot {
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.15);
+    }
+
+    /* Scroll indicator */
+    .scroll-hint {
+      position: absolute;
+      bottom: 2.5rem;
+      right: 2.5rem;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      animation: heroFadeUp 1.2s 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .scroll-hint span {
+      font-size: 0.55rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.2);
+      writing-mode: vertical-rl;
+    }
+
+    .scroll-line {
+      width: 1px;
+      height: 40px;
+      background: rgba(255,255,255,0.12);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .scroll-line::after {
+      content: '';
+      position: absolute;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--accent);
+      animation: scrollDrop 1.8s ease-in-out infinite;
+    }
+
+    @keyframes scrollDrop {
+      from { top: -100%; }
+      to   { top: 200%; }
+    }
+
+
+    
+    
+  
