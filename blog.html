@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO meta tags ──────────────────────────────────────────── -->
+  <title>Mitchell Asare — Blog | Training, Fight Updates & Boxing News</title>
+  <meta name="description" content="Follow the professional boxing journey of Mitchell Asare — 6x London Amateur Champion. Training updates, fight announcements, and behind the scenes." />
+  <meta name="keywords" content="Mitchell Asare, London boxer, professional boxer, boxing blog, amateur champion, pro debut" />
+  <meta name="author" content="Mitchell Asare" />
+
+  <!-- Open Graph (for social sharing) -->
+  <meta property="og:title" content="Mitchell Asare — Boxing Blog" />
+  <meta property="og:description" content="Follow the professional boxing journey of Mitchell Asare — 6x London Amateur Champion turning professional." />
+  <meta property="og:type" content="website" />
+  <!-- <meta property="og:url" content="https://yoursite.com/blog.html" /> -->
+  <!-- <meta property="og:image" content="./assets/images/og-image.jpg" /> -->
+
+  <!-- <link rel="canonical" href="https://yoursite.com/blog.html" /> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+   <link href="styles/root.css" rel="stylesheet" />
+   <link href="styles/blog.css" rel="stylesheet" />
+   <link href="styles/nav.css" rel="stylesheet" />
+
+
+
+</head>
+<body>
+
+  <!-- ─── Nav ─────────────────────────────────────────────────── -->
+    <nav id="nav">
+    <a href="#hero" class="nav-logo">
+      <img src="logo.jpg" alt="Logo with the initials M and A" height="36" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+      <span class="nav-logo-fallback">Mitchell asare</span>
+    </a>
+
+    <!-- Desktop nav links -->
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#fight">Fight night</a></li>
+      <li><a href="index.html#gallery">Gallery</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+
+    <a href="index.html#fight" class="nav-ticket" id="nav-ticket-btn">Notify me</a>
+
+    <!-- CS-style toggle (mobile only) -->
+    <button class="cs-toggle" id="cs-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="cs-ul-wrapper" aria-haspopup="menu">
+      <span class="cs-box" aria-hidden="true">
+        <span class="cs-line cs-line1"></span>
+        <span class="cs-line cs-line2"></span>
+        <span class="cs-line cs-line3"></span>
+      </span>
+    </button>
+
+    <!-- Full screen mobile menu -->
+    <div class="cs-ul-wrapper" id="cs-ul-wrapper">
+      <ul class="cs-ul">
+        <li class="cs-li"><a href="index.html#about"   class="cs-li-link">About</a></li>
+        <li class="cs-li"><a href="index.html#fight"   class="cs-li-link">Fight night</a></li>
+        <li class="cs-li"><a href="index.html#gallery" class="cs-li-link">Gallery</a></li>
+        <li class="cs-li"><a href="blog.html"          class="cs-li-link">Blog</a></li>
+        <li class="cs-li"><a href="index.html#contact" class="cs-li-link">Contact</a></li>
+      </ul>
+      <div class="cs-menu-footer">
+        <a href="index.html#fight" class="cs-menu-notify" id="menu-notify-btn">Notify me</a>
+        <div class="cs-menu-socials">
+          <a href="#" class="cs-menu-social-link" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="cs-menu-social-link" aria-label="TikTok" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          </a>
+          <a href="#" class="cs-menu-social-link" aria-label="YouTube" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+        <div class="cs-menu-creds">
+          <span>6x London Champion</span>
+          <span class="dot">·</span>
+          <span>70+ fights</span>
+          <span class="dot">·</span>
+          <span>Pro debut</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── Blog header ───────────────────────────────────────────── -->
+  <div class="blog-header">
+    <div class="blog-header-inner">
+      <div>
+        <p class="section-eyebrow">The journal</p>
+        <h1 class="blog-title">From the<br>Corner</h1>
+      </div>
+      <div class="blog-header-right">
+        <p class="blog-header-desc">Training updates, fight announcements and the story behind the journey from amateur champion to professional boxer.</p>
+        <p class="blog-post-count" id="post-count">— posts</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── Category filters ──────────────────────────────────────── -->
+  <div class="blog-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="fight">Fight news</button>
+    <button class="filter-btn" data-filter="training">Training</button>
+    <button class="filter-btn" data-filter="journey">The journey</button>
+    <button class="filter-btn" data-filter="boxing">Boxing</button>
+  </div>
+
+  <!-- ─── Blog grid ─────────────────────────────────────────────── -->
+  <div class="blog-grid-wrap">
+
+    <!-- ═══════════════════════════════════════════════════════════
+         POSTS — Edit or duplicate these blocks to add new posts.
+         For a new post:
+           1. Copy a .post-card block
+           2. Update the href to your new post page (e.g. posts/my-post.html)
+           3. Update data-category to match a filter button
+           4. Update the title, excerpt, date, read time, and image
+         ═══════════════════════════════════════════════════════════ -->
+
+    <!-- Featured post (make your most recent/important post the featured one) -->
+    <a href="posts/pro-debut-announcement.html" class="post-featured" data-category="fight">
+      <div class="post-featured-img-wrap">
+        
+          <img class="post-img" src="/assets/images/gallery/pics/7.jpeg" alt="Pro debut announcement" />
+       
+        <div class="post-img-placeholder">01</div>
+      </div>
+      <div class="post-featured-body">
+        <div>
+          <span class="post-featured-tag">Fight news</span>
+          <h2 class="post-featured-title">The announcement — turning professional</h2>
+          <p class="post-featured-excerpt">After eight years, 70+ amateur fights, and six London titles, the decision has been made. Here's what turning professional means, what comes next, and why now is the right time.</p>
+        </div>
+        <div>
+          <!-- <div class="post-meta">
+            <span class="post-date">[Month Day, Year]</span>
+            <span class="post-meta-dot"></span>
+            <span class="post-read-time">4 min read</span>
+          </div> -->
+          <span class="post-read-more">
+            Read post
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Post grid -->
+    <div class="blog-grid" id="blog-grid">
+
+      <a href="posts/six-london-titles.html" class="post-card" data-category="journey">
+        <div class="post-card-img">
+          <!-- <div class="post-img-placeholder"></div> -->
+           <img class="post-img" src="/assets/images/gallery/pics/4.jpeg" alt="Pro debut announcement" />
+       
+        </div>
+        <div class="post-card-body">
+          
+          <span class="post-tag">The journey</span>
+          <h3 class="post-card-title">Six London titles — how it happened</h3>
+          <p class="post-card-excerpt">The story behind six consecutive London Amateur Championship titles and what each one taught me about boxing and myself.</p>
+          <div class="post-card-meta">
+            <!-- <span class="post-date">[Month Day, Year]</span>
+            <span class="post-meta-dot"></span>
+            <span class="post-read-time">5 min read</span> -->
+          </div>
+        </div>
+      </a>
+
+      <!-- <a href="posts/training-week.html" class="post-card" data-category="training">
+        <div class="post-card-img">
+          <div class="post-img-placeholder">03</div>
+        </div>
+        <div class="post-card-body">
+          <span class="post-tag">Training</span>
+          <h3 class="post-card-title">A week in the gym before fight night</h3>
+          <p class="post-card-excerpt">What a full training week looks like in the build-up to a professional debut — sessions, recovery, and mindset.</p>
+          <div class="post-card-meta">
+            <span class="post-date">[Month Day, Year]</span>
+            <span class="post-meta-dot"></span>
+            <span class="post-read-time">3 min read</span>
+          </div>
+        </div>
+      </a> -->
+
+      <!-- <a href="posts/aba-finalist.html" class="post-card" data-category="journey">
+        <div class="post-card-img">
+          <div class="post-img-placeholder">04</div>
+        </div>
+        <div class="post-card-body">
+          <span class="post-tag">The journey</span>
+          <h3 class="post-card-title">Reaching the Elite ABA Final</h3>
+          <p class="post-card-excerpt">The Elite ABA Championships are the highest level of amateur boxing in England. Here's what it took to reach the final.</p>
+          <div class="post-card-meta">
+            <span class="post-date">[Month Day, Year]</span>
+            <span class="post-meta-dot"></span>
+            <span class="post-read-time">6 min read</span>
+          </div>
+        </div>
+      </a> -->
+
+      <a href="posts/amateur-vs-pro.html" class="post-card" data-category="boxing">
+        <div class="post-card-img">
+           <img class="post-img" src="/assets/images/gallery/pics/12.jpeg">
+          <!-- <div class="post-img-placeholder">05</div> -->
+        </div>
+        <div class="post-card-body">
+          <span class="post-tag">Boxing</span>
+          <h3 class="post-card-title">Amateur vs professional boxing — what changes</h3>
+          <p class="post-card-excerpt">The rules, the rounds, the money, the pressure — everything that is different about boxing professionally compared to the amateur game.</p>
+          <div class="post-card-meta">
+            <!-- <span class="post-date">[Month Day, Year]</span> -->
+            <!-- <span class="post-meta-dot"></span> -->
+            <!-- <span class="post-read-time">4 min read</span> -->
+          </div>
+        </div>
+      </a>
+
+      <!-- <a href="posts/international-box-cup.html" class="post-card" data-category="journey">
+        <div class="post-card-img">
+          <div class="post-img-placeholder">06</div>
+        </div>
+        <div class="post-card-body">
+          <span class="post-tag">The journey</span>
+          <h3 class="post-card-title">International Box Cup — the silver medal</h3>
+          <p class="post-card-excerpt">Competing internationally at the Box Cup was a turning point. Fighting outside England sharpened everything.</p>
+          <div class="post-card-meta">
+            <span class="post-date">[Month Day, Year]</span>
+            <span class="post-meta-dot"></span>
+            <span class="post-read-time">5 min read</span>
+          </div>
+        </div>
+      </a> -->
+
+      <!-- <a href="posts/london-boxing-gyms.html" class="post-card" data-category="boxing">
+        <div class="post-card-img">
+          <div class="post-img-placeholder">07</div>
+        </div>
+        <div class="post-card-body">
+          <span class="post-tag">Boxing</span>
+          <h3 class="post-card-title">The best boxing gyms in London</h3>
+          <p class="post-card-excerpt">Eight years training across London. Here are the gyms that shaped me and what makes each one worth knowing about.</p>
+          <div class="post-card-meta">
+            <span class="post-date">[Month Day, Year]</span>
+            <span class="post-meta-dot"></span>
+            <span class="post-read-time">4 min read</span>
+          </div>
+        </div>
+      </a> -->
+
+    </div>
+    <!-- End post grid -->
+
+    <!-- Pagination -->
+    <div class="blog-pagination">
+      <a href="#" class="page-btn active">1</a>
+      <!-- <a href="#" class="page-btn">2</a>
+      <a href="#" class="page-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a> -->
+    </div>
+
+  </div>
+
+  <!-- ─── Footer ───────────────────────────────────────────────── -->
+  <footer>
+    <p>&copy; 2026 Mitchell Asare. All rights reserved.</p>
+    <a href="index.html">← Back to main site</a>
+  </footer>
+
+
+<script src="/js/config.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/blog.js"></script>
+
+</body>
+</html>

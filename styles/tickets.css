@@ -1,0 +1,610 @@
+
+    /* ─── Hero header ──────────────────────────────────────────── */
+    .tickets-hero {
+      padding: 8rem 2.5rem 5rem;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* Subtle background graphic */
+    .tickets-hero::before {
+      content: 'FIGHT NIGHT';
+      position: absolute;
+      bottom: -2rem;
+      right: -1rem;
+      font-family: var(--font-display);
+      font-size: clamp(6rem, 18vw, 16rem);
+      letter-spacing: 0.06em;
+      color: rgba(255,255,255,0.025);
+      pointer-events: none;
+      white-space: nowrap;
+      line-height: 1;
+    }
+
+    .tickets-hero-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: end;
+    }
+
+
+    .tickets-title {
+      font-family: var(--font-display);
+      font-size: clamp(3.5rem, 8vw, 7rem);
+      letter-spacing: 0.06em;
+      line-height: 0.9;
+      margin-bottom: 1.5rem;
+    }
+
+    .tickets-subtitle {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.7;
+      max-width: 420px;
+    }
+
+    /* Fight info card */
+    .fight-info-card {
+      background: var(--off-black);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .fight-info-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+      gap: 1rem;
+    }
+
+    .fight-info-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .fight-info-row:first-child { padding-top: 0; }
+
+    .fight-info-label {
+      font-size: 0.58rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      flex-shrink: 0;
+      padding-top: 0.15rem;
+    }
+
+    .fight-info-value {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--white);
+      text-align: right;
+      line-height: 1.4;
+    }
+
+    .fight-info-value small {
+      display: block;
+      font-size: 0.68rem;
+      font-weight: 400;
+      color: var(--muted);
+      margin-top: 0.15rem;
+    }
+
+    /* Countdown in hero */
+    .tickets-countdown {
+      display: flex;
+      gap: 0.6rem;
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .tc-unit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.3rem;
+      flex: 1;
+      background: var(--dark);
+      border: 1px solid var(--border);
+      padding: 0.8rem 0.5rem;
+    }
+
+    .tc-num {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      letter-spacing: 0.06em;
+      line-height: 1;
+      color: var(--white);
+    }
+
+    .tc-label {
+      font-size: 0.52rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* Urgency badge */
+    .urgency-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.6rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #e8a838;
+      border: 1px solid rgba(232,168,56,0.25);
+      background: rgba(232,168,56,0.06);
+      padding: 0.35rem 0.9rem;
+      border-radius: 2px;
+      margin-bottom: 1.5rem;
+    }
+
+
+
+
+
+    /* ─── Ticket tiers section ─────────────────────────────────── */
+    .tickets-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 6rem 2.5rem;
+    }
+
+    .tickets-section-header {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .tickets-section-header h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      letter-spacing: 0.08em;
+      margin-bottom: 0.6rem;
+    }
+
+    .tickets-section-header p {
+      font-size: 0.8rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+    }
+
+    /* Tier cards */
+    .tier-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3px;
+    }
+
+    .tier-card {
+      background: var(--off-black);
+      border: 1px solid var(--border);
+      padding: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      position: relative;
+      transition: border-color 0.25s;
+    }
+
+    .tier-card:hover { border-color: rgba(255,255,255,0.18); }
+
+    /* Premium tier styling */
+    .tier-card.premium {
+      border-color: rgba(201,168,76,0.3);
+      background: linear-gradient(135deg, var(--off-black) 0%, rgba(201,168,76,0.04) 100%);
+    }
+
+    .tier-card.premium:hover { border-color: rgba(201,168,76,0.55); }
+
+    .tier-badge {
+      display: inline-block;
+      font-size: 0.55rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      padding: 0.28rem 0.75rem;
+      border-radius: 2px;
+      margin-bottom: 1.8rem;
+      align-self: flex-start;
+    }
+
+    .tier-badge.standard {
+      color: var(--accent);
+      border: 1px solid rgba(74,143,170,0.35);
+      background: var(--accent-dim);
+    }
+
+    .tier-badge.premium {
+      color: var(--gold);
+      border: 1px solid rgba(201,168,76,0.35);
+      background: var(--gold-dim);
+    }
+
+    /* Recommended label */
+    .tier-recommended {
+      position: absolute;
+      top: -1px; right: 2rem;
+      font-size: 0.55rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--black);
+      background: var(--gold);
+      padding: 0.3rem 0.8rem;
+    }
+
+    .tier-name {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      letter-spacing: 0.06em;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .tier-price {
+      display: flex;
+      align-items: baseline;
+      gap: 0.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .tier-price-amount {
+      font-family: var(--font-display);
+      font-size: clamp(2.8rem, 5vw, 4rem);
+      letter-spacing: 0.04em;
+      line-height: 1;
+      color: var(--white);
+    }
+
+    .tier-price-currency {
+      font-size: 1.2rem;
+      color: var(--muted);
+      align-self: flex-start;
+      padding-top: 0.4rem;
+    }
+
+    .tier-price-note {
+      font-size: 0.65rem;
+      color: rgba(255,255,255,0.25);
+      letter-spacing: 0.08em;
+      margin-bottom: 2rem;
+    }
+
+    .tier-divider {
+      width: 100%;
+      height: 1px;
+      background: var(--border);
+      margin: 1.5rem 0;
+    }
+
+    /* Inclusions list */
+    .tier-inclusions {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      margin-bottom: 2rem;
+      flex: 1;
+    }
+
+    .tier-inclusions li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.5;
+    }
+
+    .tier-inclusions li .tick {
+      flex-shrink: 0;
+      width: 1rem;
+      height: 1rem;
+      margin-top: 0.15rem;
+      color: var(--accent);
+    }
+
+    .tier-card.premium .tier-inclusions li .tick {
+      color: var(--gold);
+    }
+
+    .tier-inclusions li.excluded {
+      color: rgba(255,255,255,0.2);
+      text-decoration: line-through;
+    }
+
+    .tier-inclusions li.excluded .tick { opacity: 0.2; }
+
+    /* Availability bar */
+    .tier-availability {
+      margin-bottom: 1.5rem;
+    }
+
+    .tier-availability-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.6rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.25);
+      margin-bottom: 0.5rem;
+    }
+
+    .tier-availability-label span:last-child {
+      color: #e8a838;
+    }
+
+    .availability-bar {
+      width: 100%;
+      height: 2px;
+      background: var(--border);
+      border-radius: 1px;
+      overflow: hidden;
+    }
+
+    .availability-fill {
+      height: 100%;
+      border-radius: 1px;
+      transition: width 0.6s ease;
+    }
+
+    .availability-fill.standard { background: var(--accent); }
+    .availability-fill.premium  { background: var(--gold); }
+
+    /* Buy button */
+    .tier-buy-btn {
+      display: block;
+      text-align: center;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 1rem;
+      border-radius: 2px;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      font-family: var(--font-body);
+      transition: background 0.2s, color 0.2s, transform 0.15s;
+    }
+
+    .tier-buy-btn:hover { transform: translateY(-1px); }
+
+    .tier-buy-btn.standard {
+      background: var(--white);
+      color: var(--black);
+    }
+
+    .tier-buy-btn.standard:hover { background: var(--accent); color: var(--white); }
+
+    .tier-buy-btn.premium {
+      background: var(--white);
+      color: var(--black);
+    }
+
+    .tier-buy-btn.premium:hover { background: #e0b84e; }
+
+    .tier-buy-btn.sold-out {
+      background: var(--dark);
+      color: rgba(255,255,255,0.2);
+      border: 1px solid var(--border);
+      cursor: not-allowed;
+      transform: none !important;
+    }
+
+    /* ─── How it works ─────────────────────────────────────────── */
+    .how-it-works {
+      background: var(--off-black);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 5rem 2.5rem;
+    }
+
+    .how-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+
+
+    .how-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      letter-spacing: 0.08em;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .how-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+    }
+
+    .how-step {
+      background: var(--dark);
+      border: 1px solid var(--border);
+      padding: 1.8rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    .how-step-num {
+      font-family: var(--font-display);
+      font-size: 2.4rem;
+      letter-spacing: 0.06em;
+      color: rgba(255,255,255,0.1);
+      line-height: 1;
+    }
+
+    .how-step-title {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--white);
+    }
+
+    .how-step-desc {
+      font-size: 0.72rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    /* ─── FAQ ──────────────────────────────────────────────────── */
+    .faq-section {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 6rem 2.5rem;
+    }
+
+
+
+    .faq-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      letter-spacing: 0.08em;
+      margin-bottom: 3rem;
+      line-height: 1;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.4rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      cursor: pointer;
+      text-align: left;
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--white);
+      letter-spacing: 0.02em;
+      transition: color 0.2s;
+    }
+
+    .faq-question:hover { color: var(--off-white); }
+
+    .faq-icon {
+      flex-shrink: 0;
+      width: 1.4rem;
+      height: 1.4rem;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      transition: transform 0.3s, border-color 0.2s;
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+      border-color: rgba(255,255,255,0.25);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.16,1,0.3,1);
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+    }
+
+    .faq-answer-inner {
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.8;
+      padding-bottom: 1.4rem;
+    }
+
+    /* ─── Final CTA ────────────────────────────────────────────── */
+    .tickets-cta {
+      background: var(--off-black);
+      border-top: 1px solid var(--border);
+      padding: 5rem 2.5rem;
+      text-align: center;
+    }
+
+    .tickets-cta h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      letter-spacing: 0.08em;
+      margin-bottom: 0.8rem;
+      line-height: 1;
+    }
+
+    .tickets-cta p {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 2.5rem;
+      letter-spacing: 0.06em;
+    }
+
+    .cta-btn-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+
+ 
+    /* ─── Responsive ───────────────────────────────────────────── */
+    @media (max-width: 768px) {
+ 
+
+      .tickets-hero { padding: 6rem 1.25rem 3rem; }
+      .tickets-hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+
+      .tickets-section { padding: 4rem 1.25rem; }
+      .tier-grid { grid-template-columns: 1fr; }
+
+      .how-it-works { padding: 3.5rem 1.25rem; }
+      .how-steps { grid-template-columns: repeat(2, 1fr); }
+
+      .faq-section { padding: 4rem 1.25rem; }
+
+      .tickets-cta { padding: 3.5rem 1.25rem; }
+      .cta-btn-group { flex-direction: column; }
+      .btn-primary, .btn-gold { width: 100%; text-align: center; }
+
+     
+    }
+
+
+    /* Sold out overlay on card */
+.sold-out-overlay {
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
+  font-size: 0.58rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  background: rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 0.3rem 0.8rem;
+  border-radius: 2px;
+  backdrop-filter: blur(4px);
+}
+
+/* Sold out card dimming */
+.tier-card:has(.sold-out-overlay) {
+  opacity: 0.6;
+  pointer-events: none;
+}

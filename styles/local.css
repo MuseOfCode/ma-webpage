@@ -1,65 +1,4 @@
 
-    /* ─── Nav ──────────────────────────────────────────────────── */
-    nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1.25rem 2.5rem;
-      transition: background 0.4s, backdrop-filter 0.4s;
-    }
-
-    nav.scrolled {
-      background: rgba(8,8,8,0.88);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .nav-name {
-      font-family: var(--font-display);
-      font-size: 1.4rem;
-      letter-spacing: 0.14em;
-      color: var(--white);
-      text-decoration: none;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-      list-style: none;
-    }
-
-    .nav-links a {
-      font-size: 0.7rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--muted);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .nav-links a:hover { color: var(--white); }
-
-    .nav-ticket {
-      font-size: 0.65rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--black);
-      background: var(--white);
-      padding: 0.5rem 1.2rem;
-      border-radius: 2px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background 0.2s, color 0.2s;
-    }
-
-    .nav-ticket:hover {
-      background: var(--accent);
-      color: var(--white);
-    }
-
 
     /* ─── Hero social strip ────────────────────────────────────── */
     .hero-social-strip {
@@ -150,15 +89,6 @@
       max-width: 1200px;
       margin: 0 auto;
     }
-
-    .section-eyebrow {
-      font-size: 0.6rem;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 1rem;
-    }
-
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -168,14 +98,15 @@
     }
 
     /* Video embed */
-    .video-wrap {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 16/9;
-      background: var(--dark);
-      border: 1px solid var(--border);
-      overflow: hidden;
-    }
+ .video-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: var(--dark);
+  border: 1px solid var(--border);
+  border-bottom: none;
+  overflow: hidden;
+}
 
     .video-wrap video {
       position: absolute;
@@ -185,33 +116,33 @@
       border: none;
     }
 
-    /* Video placeholder — remove once you have a real video */
-    .video-placeholder {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      color: var(--muted);
-    }
 
-    .video-placeholder svg {
-      width: 48px;
-      height: 48px;
-      opacity: 0.3;
-    }
+.unmute-btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  transition: background 0.2s, transform 0.2s;
+  z-index: 10;
+}
 
-    .video-placeholder span {
-      font-size: 0.65rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-    }
-
+.unmute-btn:hover {
+  background: rgba(0,0,0,0.8);
+  transform: scale(1.08);
+}
     .about-text h2 {
       font-family: var(--font-display);
-      font-size: clamp(2.4rem, 4vw, 3.2rem);
+      font-size: clamp(2rem, 4vw, 3rem);
       letter-spacing: 0.06em;
       line-height: 1;
       margin-bottom: 1.5rem;
@@ -513,31 +444,15 @@
       white-space: nowrap;
     }
  
+    .newsletter-note {
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      color: rgba(255,255,255,0.18);
+      margin-top: 0.8rem;
+    }
+ 
     .email-form button:hover { background: var(--accent); border-color: var(--accent); color: var(--white); }
-  /* ─── Nav logo ─────────────────────────────────────────────── */
-    .nav-logo {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-    }
- 
-    .nav-logo img {
-      height: 36px;
-      width: auto;
-      display: block;
-      /* filter: brightness(0) invert(1); */
-      transition: opacity 0.2s;
-    }
- 
-    .nav-logo img:hover { opacity: 0.7; }
- 
-    .nav-logo-fallback {
-      display: none; /* shown via JS onerror if logo.png is missing */
-      font-family: var(--font-display);
-      font-size: 1.4rem;
-      letter-spacing: 0.14em;
-      color: var(--white);
-    }
+  
      /* ─── 07 · Contact ─────────────────────────────────────────── */
     #contact {
       padding: 8rem 2.5rem;
@@ -670,29 +585,14 @@
     .contact-success.visible { display: flex; }
  
  
-    /* ─── Footer ───────────────────────────────────────────────── */
-    footer {
-      padding: 2rem 2.5rem;
-      border-top: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
- 
-    footer p {
-      font-size: 0.6rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.15);
-    }
  
     /* ─── Responsive ───────────────────────────────────────────── */
     @media (max-width: 768px) {
-      nav { padding: 1rem 1.25rem; }
-      .nav-links { display: none; }
+      /* nav { padding: 1rem 1.25rem; } */
+      /* .nav-links { display: none; } */
  
-      .hero-creds { flex-wrap: wrap; gap: 0.5rem; padding: 0 1.25rem; }
-      .scroll-hint { display: none; }
+      /* .hero-creds { flex-wrap: wrap; gap: 0.5rem; padding: 0 1.25rem; }
+      .scroll-hint { display: none; } */
  
       .stats-grid { grid-template-columns: 1fr; }
  
@@ -742,10 +642,6 @@
       animation: pulse 1.8s ease-in-out infinite;
     }
  
-    @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50%       { opacity: 0.4; transform: scale(0.7); }
-    }
  
     .ticket-capture-form {
       display: flex;
@@ -815,322 +711,99 @@
       max-width: 380px;
     }
 
+ 
+
+
+
+        .gallery-view-all {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s, gap 0.2s;
+    }
+ 
+    .gallery-view-all:hover { color: var(--white); gap: 0.8rem; }
+
+
+    .gallery-footer {
+      display: flex;
+      justify-content: center;
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+ 
+    .gallery-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-decoration: none;
+      border: 1px solid rgba(74,143,170,0.3);
+      padding: 0.8rem 2rem;
+      border-radius: 2px;
+      transition: color 0.2s, border-color 0.2s, gap 0.2s, background 0.2s;
+    }
+ 
+    .gallery-cta:hover {
+      color: var(--white);
+      border-color: rgba(255,255,255,0.25);
+      background: rgba(255,255,255,0.03);
+      gap: 0.9rem;
+    }
+
+/* Left column wrapper */
+.about-left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Remove bottom border from video so it connects to stats */
+/* .video-wrap {
+  border-bottom: none;
+} */
+
+/* Fighter stats */
+.fighter-stats {
+  width: 100%;
+  border: 1px solid var(--border);
+}
+
+.fighter-stat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.fighter-stat:last-child { border-bottom: none; }
+
+.fighter-stat-label {
+  font-size: 0.58rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.fighter-stat-value {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--white);
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .about-left { width: 100%; }
+}
     
-    /* ─── CS Toggle (hamburger) — hidden on desktop ────────────── */
-    .cs-toggle { display: none; }
- 
-    /* CS wrapper hidden on desktop entirely */
-    .cs-ul-wrapper { display: none; }
- 
-    /* ─── CS mobile nav menu ───────────────────────────────────── */
-    @media only screen and (max-width: 768px) {
- 
-      /* Body lock when menu open */
-      body.cs-open { overflow: hidden; }
- 
-      /* Backdrop blur overlay behind the panel */
-      #nav::before {
-        content: '';
-        width: 100%;
-        height: 0vh;
-        background: rgba(0,0,0,0.7);
-        opacity: 0;
-        display: block;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        z-index: -1;
-        transition: height 0.5s, opacity 0.5s;
-        backdrop-filter: blur(6px);
-      }
- 
-      #nav.cs-active::before {
-        height: 150vh;
-        opacity: 1;
-      }
- 
-      /* Toggle button */
-      .cs-toggle {
-        display: flex;
-        width: clamp(2.8rem, 7vw, 3.2rem);
-        height: clamp(2.8rem, 7vw, 3.2rem);
-        margin-left: auto;
-        background-color: var(--accent);
-        border: none;
-        border-radius: 0.25rem;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        transition: transform 0.6s;
-        flex-shrink: 0;
-        position: relative;
-        z-index: 200;
-      }
- 
-      .cs-toggle.cs-active { transform: rotate(180deg); }
- 
-      /* CS line styles */
-      .cs-box {
-        width: clamp(1.4rem, 2vw, 1.6rem);
-        height: 1rem;
-        position: relative;
-        display: block;
-      }
- 
-      .cs-line {
-        width: 100%;
-        height: 2px;
-        background-color: var(--white);
-        border-radius: 2px;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-      }
- 
-      .cs-line1 {
-        top: 0;
-        transform-origin: center;
-        transition: transform 0.5s ease, top 0.3s ease;
-      }
- 
-      .cs-line2 {
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        transform-origin: center;
-        transition: top 0.3s ease, transform 0.5s ease, opacity 0.2s ease;
-      }
- 
-      .cs-line3 {
-        bottom: 0;
-        transition: bottom 0.3s ease, opacity 0.3s ease;
-      }
- 
-      /* Animate to X */
-      #nav.cs-active .cs-line1 {
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(225deg);
-      }
- 
-      #nav.cs-active .cs-line2 {
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(-225deg);
-        opacity: 0;
-      }
- 
-      #nav.cs-active .cs-line3 {
-        bottom: 100%;
-        opacity: 0;
-      }
- 
-      /* ── Full screen menu overlay ──────────────────────────── */
-      .cs-ul-wrapper {
-        width: 100vw;
-        height: 100vh;
-        background: var(--black);
-        position: fixed;
-        top: 0; left: 0;
-        z-index: 99;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 6rem 2rem 3rem;
-        opacity: 0;
-        pointer-events: none;
-        transform: translateY(-12px);
-        transition: opacity 0.4s cubic-bezier(0.16,1,0.3,1),
-                    transform 0.4s cubic-bezier(0.16,1,0.3,1);
-      }
- 
-      #nav.cs-active .cs-ul-wrapper {
-        opacity: 1;
-        pointer-events: all;
-        transform: translateY(0);
-        transition-delay: 0.05s;
-      }
- 
-      /* ── Top label ─────────────────────────────────────────── */
-      .cs-ul-wrapper::before {
-        content: 'Professional debut';
-        display: block;
-        position: absolute;
-        top: 1.8rem;
-        left: 2rem;
-        font-size: 0.6rem;
-        letter-spacing: 0.24em;
-        text-transform: uppercase;
-        color: var(--accent);
-        font-family: var(--font-body);
-        opacity: 0;
-        transform: translateY(8px);
-        transition: opacity 0.4s 0.2s ease, transform 0.4s 0.2s ease;
-      }
- 
-      #nav.cs-active .cs-ul-wrapper::before {
-        opacity: 1;
-        transform: translateY(0);
-      }
- 
-      /* ── Nav list ──────────────────────────────────────────── */
-      .cs-ul {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 0;
-        list-style: none;
-        flex: 1;
-      }
- 
-      .cs-li {
-        width: 100%;
-        border-bottom: 1px solid var(--border);
-        transform: translateY(20px);
-        opacity: 0;
-        transition: transform 0.5s cubic-bezier(0.16,1,0.3,1),
-                    opacity 0.4s ease;
-      }
- 
-      .cs-li:first-child { border-top: 1px solid var(--border); }
- 
-      /* Stagger delays */
-      .cs-li:nth-of-type(1) { transition-delay: 0.1s;  }
-      .cs-li:nth-of-type(2) { transition-delay: 0.16s; }
-      .cs-li:nth-of-type(3) { transition-delay: 0.22s; }
-      .cs-li:nth-of-type(4) { transition-delay: 0.28s; }
- 
-      #nav.cs-active .cs-li {
-        opacity: 1;
-        transform: translateY(0);
-      }
- 
-      .cs-li-link {
-        font-family: var(--font-display);
-        font-size: clamp(3rem, 12vw, 5rem);
-        letter-spacing: 0.06em;
-        text-decoration: none;
-        color: rgba(255,255,255,0.18);
-        display: block;
-        padding: 0.4rem 0;
-        line-height: 1.1;
-        transition: color 0.2s, letter-spacing 0.3s;
-      }
- 
-      .cs-li-link:hover {
-        color: var(--white);
-        letter-spacing: 0.1em;
-      }
- 
-      /* ── Footer — notify me + credentials ──────────────────── */
-      .cs-menu-footer {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        opacity: 0;
-        transform: translateY(10px);
-        transition: opacity 0.4s 0.35s ease,
-                    transform 0.4s 0.35s ease;
-      }
- 
-      #nav.cs-active .cs-menu-footer {
-        opacity: 1;
-        transform: translateY(0);
-      }
- 
-      .cs-menu-notify {
-        display: block;
-        text-align: center;
-        font-size: 0.7rem;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        font-weight: 600;
-        color: var(--black);
-        background: var(--white);
-        padding: 1rem;
-        text-decoration: none;
-        border-radius: 2px;
-        transition: background 0.2s, color 0.2s;
-      }
- 
-      .cs-menu-notify:hover {
-        background: var(--accent);
-        color: var(--white);
-      }
- 
-      .cs-menu-creds {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 0.4rem;
-        font-size: 0.58rem;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-        color: rgba(255,255,255,0.18);
-        font-family: var(--font-body);
-      }
- 
-      .cs-menu-creds span.dot { color: rgba(255,255,255,0.1); }
- 
-      .cs-menu-socials {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-      }
- 
-      .cs-menu-social-link {
-        color: rgba(255,255,255,0.3);
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 2.4rem;
-        height: 2.4rem;
-        border: 1px solid rgba(255,255,255,0.1);
-        border-radius: 50%;
-        transition: color 0.2s, border-color 0.2s;
-      }
- 
-      .cs-menu-social-link:hover {
-        color: var(--white);
-        border-color: rgba(255,255,255,0.35);
-      }
- 
-      /* Show toggle, hide desktop links and ticket on mobile */
-      .cs-toggle  { display: flex; }
-      .nav-links  { display: none; }
-      .nav-ticket { display: none; }
- 
-      /* Wrapper is block — starts invisible, opens on cs-active */
-      .cs-ul-wrapper { display: flex; }
-    }
- 
-    /* ─── Responsive (non-nav) ─────────────────────────────────── */
-    @media (max-width: 768px) {
-      nav { padding: 1rem 1.25rem; }
- 
-      .hero-creds { flex-wrap: wrap; gap: 0.5rem; padding: 0 1.25rem; }
-      .scroll-hint { display: none; }
- 
-      .stats-grid { grid-template-columns: 1fr; }
- 
-      #about, #gallery { padding: 5rem 1.25rem; }
-      .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
- 
-      #fight { padding: 5rem 1.25rem; }
-      .fight-grid { grid-template-columns: 1fr; gap: 2.5rem; }
- 
-      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
- 
-      #social { padding: 4rem 1.25rem; }
-      .email-form { flex-direction: column; }
-      .email-form input { border-right: 1px solid var(--border); border-bottom: none; }
-      .email-form input:focus { border-color: var(--accent); }
- 
-      #contact { padding: 5rem 1.25rem; }
-      .contact-row { grid-template-columns: 1fr; }
-      .contact-form .btn-primary { width: 100%; text-align: center; }
-    }

@@ -3,7 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mitchell Asare — Professional Debut</title>
+  <title>Mitchell Asare — Professional Debut | North London</title>
+
+
+<meta name="description" content="Mitchell Asare — 6x London Amateur Champion, 70+ fights, turning professional. Follow the journey, catch the debut." />
+<meta name="keywords" content="Mitchell Asare, London boxer, professional boxing debut, amateur champion London" />
+<meta property="og:title" content="Mitchell Asare — Pro Debut" />
+<meta property="og:description" content="6x London Champion turns professional. Get tickets to the debut." />
+<!-- <meta property="og:image" content="./assets/images/og-image.jpg" /> -->
+<!-- <link rel="canonical" href="https://yoursite.com" /> -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -11,6 +20,8 @@
   <link href="styles/root.css" rel="stylesheet" />
   <link href="styles/critical.css" rel="stylesheet" />
   <link href="styles/local.css" rel="stylesheet" />
+  <link href="styles/nav.css" rel="stylesheet" />
+
 
 </head>
 
@@ -18,19 +29,22 @@
   <!-- ─── Nav ─────────────────────────────────────────────────── -->
   <nav id="nav">
     <a href="#hero" class="nav-logo">
-      <img src="assets/images/logo.jpg" alt="Logo with the initials M and A" height="36" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
-      <span class="nav-logo-fallback">Mitchell asare</span>
+      <img src="logo.jpg" alt="Logo with the initials M and A" height="36" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+      <span class="nav-logo-fallback">Mitchell Asare</span>
     </a>
  
-    <!-- Desktop nav links (hidden on mobile) -->
+
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#fight">Fight night</a></li>
-      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="blog.html">Blog</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
  
     <a href="#fight" class="nav-ticket" id="nav-ticket-btn">Notify me</a>
+
+    
  
     <!-- CS-style toggle (mobile only) -->
     <button class="cs-toggle" id="cs-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="cs-ul-wrapper" aria-haspopup="menu">
@@ -46,43 +60,48 @@
       <ul class="cs-ul">
         <li class="cs-li"><a href="#about"   class="cs-li-link">About</a></li>
         <li class="cs-li"><a href="#fight"   class="cs-li-link">Fight night</a></li>
-        <li class="cs-li"><a href="#gallery" class="cs-li-link">Gallery</a></li>
+          <li class="cs-li"><a href="media.html" class="cs-li-link">Media</a></li>
+        <li class="cs-li"><a href="blog.html" class="cs-li-link">Blog</a></li>
         <li class="cs-li"><a href="#contact" class="cs-li-link">Contact</a></li>
       </ul>
       <div class="cs-menu-footer">
         <a href="#fight" class="cs-menu-notify" id="menu-notify-btn">Notify me</a>
         <div class="cs-menu-socials">
-          <a href="YOUR_INSTAGRAM_URL" class="cs-menu-social-link" aria-label="Instagram" target="_blank" rel="noopener">
+          <a  class="cs-menu-social-link" aria-label="Instagram" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
           </a>
-          <a href="YOUR_TIKTOK_URL" class="cs-menu-social-link" aria-label="TikTok" target="_blank" rel="noopener">
+          <a  class="cs-menu-social-link" aria-label="TikTok" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
           </a>
-          <a href="YOUR_YOUTUBE_URL" class="cs-menu-social-link" aria-label="YouTube" target="_blank" rel="noopener">
+          <a  class="cs-menu-social-link" aria-label="YouTube" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
           </a>
         </div>
         <div class="cs-menu-creds">
           <span>6x London Champion</span>
           <span class="dot">·</span>
-          <span>70+ fights</span>
+          <span>73+ fights</span>
           <span class="dot">·</span>
           <span>Pro debut</span>
         </div>
       </div>
     </div>
   </nav>
+ 
   <!-- ─── 01 · HERO ────────────────────────────────────────────── -->
   <section id="hero">
     <div class="hero-bg">
-      <img src="assets/images/hero-bg2.png">
+      <img src="assets/images/hero-bg.png">
          
     </div>
  
-    <div class="hero-content">
+     <div class="hero-content">
       <div class="hero-tag">Professional debut</div>
-      <h1 class="hero-name">MITCHELL<br>ASARE</h1>
-      <!-- <br>"ANANSI" -->
+      <h1 class="hero-name">
+        <img class="stage-name" src="assets/images/stage-name.png" alt="Stage name" />
+        <span class="hero-firstname">Mitchell</span>
+        <span class="hero-surname">Asare</span>
+      </h1>
       <div class="hero-divider"></div>
  
       <div class="countdown" id="countdown">
@@ -106,7 +125,7 @@
           <span class="countdown-label">Secs</span>
         </div>
       </div>
- 
+
       <!-- Smart ticket block — controlled by TICKETS_LIVE in JS -->
       <div id="hero-ticket-block"></div>
     </div>
@@ -114,7 +133,7 @@
     <div class="hero-creds">
       <span class="hero-cred-item">6x London Champion</span>
       <span class="hero-cred-dot"></span>
-      <span class="hero-cred-item">70+ fights</span>
+      <span class="hero-cred-item">73+ fights</span>
       <span class="hero-cred-dot"></span>
       <span class="hero-cred-item">Int. Box Cup Silver</span>
       <span class="hero-cred-dot"></span>
@@ -126,17 +145,19 @@
       <span>Scroll</span>
     </div>
   </section>
+
+
     <!-- Social strip — right side of hero -->
     <div class="hero-social-strip">
-      <a href="YOUR_INSTAGRAM_URL" class="hero-social-link" aria-label="Instagram" target="_blank" rel="noopener">
+      <a class="hero-social-link" aria-label="Instagram" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
       </a>
       <div class="hero-social-line"></div>
-      <a href="YOUR_TIKTOK_URL" class="hero-social-link" aria-label="TikTok" target="_blank" rel="noopener">
+      <a class="hero-social-link" aria-label="TikTok" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
       </a>
       <div class="hero-social-line"></div>
-      <a href="YOUR_YOUTUBE_URL" class="hero-social-link" aria-label="YouTube" target="_blank" rel="noopener">
+      <a  class="hero-social-link" aria-label="YouTube" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
       </a>
     </div>
@@ -158,7 +179,7 @@
   <section id="stats">
     <div class="stats-grid">
       <div class="stat-item">
-        <span class="stat-num">70+</span>
+        <span class="stat-num">73+</span>
         <span class="stat-label">Amateur fights</span>
       </div>
       <div class="stat-item">
@@ -176,49 +197,94 @@
   <section id="about">
     <p class="section-eyebrow">The fighter</p>
     <div class="about-grid">
+      <div class="about-left">
  
       <div class="video-wrap">
-        
-<video
+    <video
     class="scroll-video"
     playsinline
     preload="metadata"
+    muted
     loop>
+    <source src="assets/videos/ma-video.mp4" type="video/mp4">
+  </video>
+  
 
-    <source
-        src="https://scontent-bru2-1.cdninstagram.com/o1/v/t16/f2/m69/AQOPk3YukCGVgoIJ9GtJs90voD-G_pd5Fmw_PX4xig84vmDv9WxiRPHjspd9v8_CtV6j-ijo9WWp0WQ2zSXEnWoC.mp4?strext=1&_nc_cat=109&_nc_sid=5e9851&_nc_ht=scontent-bru2-1.cdninstagram.com&_nc_ohc=vW71YqUKp_EQ7kNvwHnJbxV&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uSUdUVi5DMy4xMjgwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6NzU2NzU0NzA1NTE4NzExLCJhc3NldF9hZ2VfZGF5cyI6MTQwMSwidmlfdXNlY2FzZV9pZCI6MTAxNDUsImR1cmF0aW9uX3MiOjE1LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=990e70116ef4d215&_nc_vs=HBksFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HUFZSYlJHdzNBdUE3eG9CQURzcW9EazZQRklaYnZWQkFBQUYVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HRTh5Y0JGcUloQ3FGM1lBQURaRHZhQnlVUGxqYnZWQkFBQUYVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm7sG89vWQ2AIVAigCQzMsF0AuRBiTdLxqGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHXsB2XCngEA&_nc_gid=k-R4Z7OUIhJVrPMRXvM3Bw&_nc_zt=28&_nc_ss=7a3ba&oh=00_Af5AVfoQHSHR0vDuujIO0siNr8XJQZWe7PyoJMyP0zLS2A&oe=6A038F37"
-        type="video/mp4">
+  <!-- Unmute button -->
+  <button class="unmute-btn" id="unmute-btn" aria-label="Unmute video">
+    <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18">
+      <path d="M11 5L6 9H2v6h4l5 4V5z"/>
+      <line x1="23" y1="9" x2="17" y2="15"/>
+      <line x1="17" y1="9" x2="23" y2="15"/>
+    </svg>
+    <svg class="icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18" style="display:none">
+      <path d="M11 5L6 9H2v6h4l5 4V5z"/>
+      <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+      <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+    </svg>
+  </button>
 
-</video>
-                 
-       
-        <div class="video-placeholder">
-          <!-- <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M20 16L34 24L20 32V16Z" fill="currentColor"/>
-          </svg> -->
-          <!-- <span>Training video</span> -->
+  
+         </div><!-- end video-wrap -->
+
+      <!-- Fighter stats -->
+      <div class="fighter-stats">
+        <div class="fighter-stat">
+          <span class="fighter-stat-label">FIGHTING OUT OF</span>
+          
+          <span class="fighter-stat-value">North London, Tottenham</span>
         </div>
+        <div class="fighter-stat">
+          <span class="fighter-stat-label">Age</span>
+          
+          <span class="fighter-stat-value">27 Years Old</span>
+        </div>
+        <div class="fighter-stat">
+          <span class="fighter-stat-label">Height</span>
+          <span class="fighter-stat-value"> 5 feet, 7 inches </span>
+        </div>
+        <div class="fighter-stat">
+          <span class="fighter-stat-label">Weight class</span>
+          <span class="fighter-stat-value">Light Weight</span>
+        </div>
+        <div class="fighter-stat">
+          <span class="fighter-stat-label">Stance</span>
+          <span class="fighter-stat-value">Orthodox</span>
+        </div>
+        <div class="fighter-stat">
+          <span class="fighter-stat-label">Gym</span>
+          <span class="fighter-stat-value">White Hart Lane Boxing Club </span>
+        </div>
+        <!-- <div class="fighter-stat">
+          <span class="fighter-stat-label">Trainer</span>
+          <span class="fighter-stat-value">[Trainer Name]</span>
+        </div> -->
       </div>
- 
+
+      </div><!-- end about-left -->
+
+      
       <div class="about-text">
-        <h2>Made through discipline.<br>Born for this.</h2>
+        <h2>Forged through discipline.<br>Born for this.</h2>
         <p>
           <!-- Replace with his real story -->
-          Mitchell Asare has spent eight years earning his place in professional boxing; not through luck but through relentless work, discipline and an amateur career that speaks for itself. Six London titles. An international silver medal. An Elite ABA Final.
+          Mitchell Asare, known as ANANSI in the ring, has spent eight years earning his place in professional boxing; not through luck but through relentless work, discipline and an amateur career that speaks for itself. Six London titles. An international silver medal. An Elite ABA Final and formerly ranked the amateur No.2 in England.
         </p>
         <div class="pull-quote">
           <!-- Replace with a real quote from him -->
           "You have to love boxing — because once you’re in that ring, you’re fighting for your life."
         </div>
         <p>
-          Now, turning professional, he steps into a new chapter. Everything that came before was training. This is the beginning.
+          Drawing inspiration from Marvin Hagler and Triple G, his insider fighting style is explosive, troubling and difficult to answer.   Mitchell describes he loves being a ‘lumbar jack’ for the bigger opponent, “chopping down trees” he confidently exclaims. His coach and mentor Chris Hall is widely regarded in the amateur and professional boxing circles, Chris is his source of direction in and out the ring. Mitchell describes Chris as a “father figure in his life”.
+        </p>
+        <p>
+          With a genuine desire to shake up the light weight boxing division in the UK, he steps into a new chapter. Everything that came before was training. This is the beginning.
         </p>
         <div class="cred-list">
           <div class="cred-list-item">6x London Amateur Champion</div>
-          <div class="cred-list-item">International Box Cup — Silver</div>
+          <div class="cred-list-item">International Box Cup — Silver Medal</div>
           <div class="cred-list-item">Elite ABA Finalist</div>
-          <div class="cred-list-item">70+ amateur contests</div>
+          <div class="cred-list-item">73+ amateur fights</div>
         </div>
       </div>
  
@@ -266,7 +332,7 @@
             <div class="fight-meta-divider"></div>
             <div class="fight-meta-item">
               <span class="fight-meta-label">Venue</span>
-              <span class="fight-meta-value">???, London</span>
+              <span class="fight-meta-value">UNKNOWN, London</span>
             </div>
             <div class="fight-meta-divider"></div>
             <div class="fight-meta-item">
@@ -280,14 +346,14 @@
         </div>
  
         <div class="map-wrap">
-          <!--
-            Replace with Google Maps embed:
+          
+       
             <iframe
               src="https://www.google.com/maps/embed?pb=YOUR_EMBED_URL"
               width="100%" height="100%" style="border:0;"
               allowfullscreen loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
-          -->
+         
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.2">
             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
             <circle cx="12" cy="9" r="2.5"/>
@@ -301,15 +367,33 @@
  
   <!-- ─── 05 · GALLERY ─────────────────────────────────────────── -->
   <section id="gallery">
-    <p class="section-eyebrow">Gallery</p>
+    <div class="gallery-header">
+      <p class="section-eyebrow">Selected works</p>
+      <a href="media.html" class="gallery-view-all">
+        View all media
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
     <div class="gallery-grid">
       <!-- Replace each item with: <img src="your-photo.jpg" alt="description" /> -->
-      <div class="gallery-item"><div class="gallery-placeholder">Photo 1</div><img src="assets/images/gallery/pic4.jpg"></div>
-      <div class="gallery-item"><div class="gallery-placeholder">Photo 2</div><img src="assets/images/gallery/pic5.jpg"></div>
-      <div class="gallery-item"><div class="gallery-placeholder">Photo 3</div><img src="assets/images/gallery/pic3.jpg"></div>
-      <div class="gallery-item"><div class="gallery-placeholder">Photo 4</div><img src="assets/images/gallery/pic4.jpg"></div>
-      <div class="gallery-item"><div class="gallery-placeholder">Photo 5</div><img src="assets/images/gallery/pic5.jpg"></div>
-      <div class="gallery-item"><div class="gallery-placeholder">Photo 6</div><img src="assets/images/gallery/pic3.jpg"></div>
+      <div class="gallery-item"><div class="gallery-placeholder"></div><img src="assets/images/gallery/pics/4.jpeg"></div>
+      
+      <div class="gallery-item">
+        <div class="gallery-placeholder"></div>
+        <img src="assets/images/gallery/pics/13.jpeg" alt="Mitchell Asare photographed in black and white training with his coach"></div>
+
+      <div class="gallery-item"><div class="gallery-placeholder"></div>
+    <img src="assets/images/gallery/pics/3.jpeg" alt="Mitchell Asare photographedin black and white">
+  </div>
+      <div class="gallery-item"><div class="gallery-placeholder"><img src="assets/images/gallery/pics/16.png"></div></div>
+      <div class="gallery-item"><div class="gallery-placeholder"><img src="assets/images/gallery/pics/15.png"></div></div>
+      <div class="gallery-item"><div class="gallery-placeholder"><img src="assets/images/gallery/pics/7.jpeg"></div></div>
+    </div>
+    <div class="gallery-footer">
+      <!-- <a href="media.html" class="gallery-cta">
+        View all photos &amp; videos
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a> -->
     </div>
   </section>
  
@@ -321,24 +405,25 @@
       <p>Training updates, fight news and behind the scenes</p>
  
       <div class="social-links">
-        <a href="YOUR_INSTAGRAM_URL" class="social-link" target="_blank" rel="noopener">
+        <a class="social-link" target="_blank" aria-label="Instagram" rel="noopener">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
           Instagram
         </a>
-        <a href="YOUR_TIKTOK_URL" class="social-link" target="_blank" rel="noopener">
+        <a class="social-link" target="_blank" aria-label="TikTok" rel="noopener">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
           TikTok
         </a>
-        <a href="YOUR_YOUTUBE_URL" class="social-link" target="_blank" rel="noopener">
+        <a class="social-link" target="_blank" aria-label="YouTube" rel="noopener">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
           YouTube
         </a>
       </div>
  
-      <form class="email-form" onsubmit="handleEmail(event)">
+            <form class="email-form" id="newsletter-form" onsubmit="handleNewsletter(event)">
         <input type="email" placeholder="Your email address" required />
-        <button type="submit">Notify me</button>
+        <button type="submit" class="btn-primary-input">Subscribe</button>
       </form>
+      <p class="newsletter-note">No spam. Unsubscribe any time.</p>
     </div>
   </section>
  
@@ -369,7 +454,9 @@
  
         <textarea name="message" placeholder="Your message" rows="5" required></textarea>
  
-        <button type="submit" class="btn-primary" id="contact-submit">Send message</button>
+        <button type="submit" class="btn-primary-input" id="contact-submit">Send message</button>
+
+     
  
         <div class="contact-success" id="contact-success">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
@@ -378,12 +465,41 @@
       </form>
     </div>
   </section>
+
  
   <!-- ─── Footer ───────────────────────────────────────────────── -->
   <footer>
     <p>&copy; 2026 Mitchell Asare. All rights reserved.</p>
     <p>Professional debut · London</p>
   </footer>
-  <script src="script.js"></script>
+
+
+ <script src="/js/config.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/countdown.js"></script>
+<script src="/js/tickets.js"></script>
+<script src="/js/index.js"></script>
+  <!-- countdown -->
+  <script>
+ 
+startCountdown({
+  days:  'cd-days',
+  hours: 'cd-hours',
+  mins:  'cd-mins',
+  secs:  'cd-secs'
+});
+
+startCountdown({
+  days:  'fcd-days',
+  hours: 'fcd-hours',
+  mins:  'fcd-mins',
+  secs:  'fcd-secs'
+});
+  </script>
+
+
+
 </body>
 </html>
+
+

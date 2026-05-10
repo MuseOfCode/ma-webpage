@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO meta tags ──────────────────────────────────────────── -->
+  <!-- UPDATE THESE FOR EVERY POST -->
+  <title>The announcement — turning professional | Mitchell Asare</title>
+  <meta name="description" content="After eight years, 70+ amateur fights, and six London titles — Mitchell Asare announces his professional boxing debut. Here's the full story." />
+  <meta name="keywords" content="Mitchell Asare, professional boxing debut, London boxer, amateur champion turns pro, boxing London 2026" />
+  <meta name="author" content="Mitchell Asare" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="The announcement — Mitchell Asare turns professional" />
+  <meta property="og:description" content="After eight years and six London titles, Mitchell Asare announces his professional debut." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://yoursite.com/posts/pro-debut-announcement.html" />
+  <meta property="og:image" content="../assets/images/blog/debut-announcement.jpg" />
+
+  <!-- Article specific meta (helps Google understand it's a blog post) -->
+  <meta property="article:published_time" content="2026-05-01T09:00:00Z" />
+  <meta property="article:author" content="Mitchell Asare" />
+  <meta property="article:tag" content="boxing" />
+  <meta property="article:tag" content="professional debut" />
+  <meta property="article:tag" content="London boxing" />
+
+  <link rel="canonical" href="https://yoursite.com/posts/pro-debut-announcement.html" />
+
+   <link href="/styles/root.css" rel="stylesheet" />
+
+  <!-- Schema markup — helps Google show rich results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "The announcement — turning professional",
+    "description": "After eight years, 70+ amateur fights, and six London titles — Mitchell Asare announces his professional boxing debut.",
+    "author": {
+      "@type": "Person",
+      "name": "Mitchell Asare"
+    },
+    "datePublished": "2026-05-01",
+    "image": "https://yoursite.com/assets/images/blog/debut-announcement.jpg",
+    "url": "https://yoursite.com/posts/pro-debut-announcement.html",
+    "publisher": {
+      "@type": "Person",
+      "name": "Mitchell Asare"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+
+
+    /* ─── Nav ──────────────────────────────────────────────────── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 2.5rem;
+      background: rgba(8,8,8,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .nav-logo img {
+      height: 36px;
+      width: auto;
+      display: block;
+      filter: brightness(0) invert(1);
+      transition: opacity 0.2s;
+    }
+
+    .nav-logo img:hover { opacity: 0.7; }
+
+    .nav-logo-fallback {
+      display: none;
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      letter-spacing: 0.14em;
+      color: var(--white);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active { color: var(--white); }
+
+    .nav-ticket {
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--black);
+      background: var(--white);
+      padding: 0.5rem 1.2rem;
+      border-radius: 2px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .nav-ticket:hover { background: var(--accent); color: var(--white); }
+
+    .cs-toggle { display: none; }
+    .cs-ul-wrapper { display: none; }
+
+    /* ─── Post hero ────────────────────────────────────────────── */
+    .post-hero {
+      padding-top: 5rem;
+      position: relative;
+    }
+
+    .post-hero-img {
+      width: 100%;
+      height: 60vh;
+      min-height: 400px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Placeholder when no image yet */
+    .post-hero-placeholder {
+      width: 100%;
+      height: 60vh;
+      min-height: 400px;
+      background: var(--dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid var(--border);
+      font-family: var(--font-display);
+      font-size: 5rem;
+      color: rgba(255,255,255,0.05);
+      letter-spacing: 0.1em;
+    }
+
+    .post-hero-overlay {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 60%;
+      background: linear-gradient(transparent, var(--black));
+      pointer-events: none;
+    }
+
+    /* ─── Post header ──────────────────────────────────────────── */
+    .post-header {
+      max-width: var(--content-w);
+      margin: 0 auto;
+      padding: 3rem 2rem 0;
+    }
+
+    .post-breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.6rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.25);
+      margin-bottom: 1.5rem;
+    }
+
+    .post-breadcrumb a {
+      color: rgba(255,255,255,0.25);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .post-breadcrumb a:hover { color: var(--white); }
+
+    .post-breadcrumb-sep { color: rgba(255,255,255,0.1); }
+
+    .post-tag-label {
+      display: inline-block;
+      font-size: 0.58rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid rgba(74,143,170,0.3);
+      padding: 0.3rem 0.8rem;
+      border-radius: 2px;
+      margin-bottom: 1.2rem;
+    }
+
+    .post-headline {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      letter-spacing: 0.04em;
+      line-height: 0.95;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+    }
+
+    .post-standfirst {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.7;
+      border-left: 2px solid var(--accent);
+      padding-left: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .post-byline {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      padding: 1.5rem 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 3rem;
+    }
+
+    .post-byline-avatar {
+      width: 2.8rem;
+      height: 2.8rem;
+      border-radius: 50%;
+      background: var(--dark);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .post-byline-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .post-byline-avatar-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 1rem;
+      color: var(--muted);
+    }
+
+    .post-byline-info { flex: 1; }
+
+    .post-byline-name {
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--white);
+      letter-spacing: 0.04em;
+    }
+
+    .post-byline-meta {
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      color: rgba(255,255,255,0.25);
+      margin-top: 0.2rem;
+    }
+
+    .post-share {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .post-share-label {
+      font-size: 0.58rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.2);
+    }
+
+    .share-btn {
+      width: 2rem;
+      height: 2rem;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      text-decoration: none;
+      cursor: pointer;
+      background: none;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .share-btn:hover { color: var(--white); border-color: rgba(255,255,255,0.3); }
+
+    /* ─── Post body content ────────────────────────────────────── */
+    .post-body {
+      max-width: var(--content-w);
+      margin: 0 auto;
+      padding: 0 2rem 5rem;
+    }
+
+    /* All the typographic elements inside a post */
+    .post-body p {
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.85;
+      margin-bottom: 1.6rem;
+    }
+
+    .post-body h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      letter-spacing: 0.06em;
+      color: var(--white);
+      margin: 3rem 0 1rem;
+      line-height: 1;
+    }
+
+    .post-body h3 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--off-white);
+      margin: 2.5rem 0 0.8rem;
+    }
+
+    /* Pull quote */
+    .pull-quote {
+      border-left: 2px solid var(--accent);
+      padding: 1rem 0 1rem 1.8rem;
+      margin: 2.5rem 0;
+      font-family: var(--font-display);
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      letter-spacing: 0.04em;
+      line-height: 1.2;
+      color: var(--white);
+    }
+
+    .pull-quote cite {
+      display: block;
+      font-family: var(--font-body);
+      font-size: 0.65rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+      font-style: normal;
+      margin-top: 0.8rem;
+    }
+
+    /* Inline image */
+    .post-image {
+      margin: 2.5rem -2rem;
+      position: relative;
+    }
+
+    .post-image img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      max-height: 500px;
+    }
+
+    /* Image placeholder */
+    .post-image-placeholder {
+      width: 100%;
+      height: 320px;
+      background: var(--dark);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.15);
+    }
+
+    .post-image figcaption {
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      color: rgba(255,255,255,0.25);
+      padding: 0.6rem 2rem 0;
+      font-style: italic;
+    }
+
+    /* Stat callout box */
+    .stat-callout {
+      background: var(--off-black);
+      border: 1px solid var(--border);
+      border-left: 2px solid var(--accent);
+      padding: 1.5rem 1.8rem;
+      margin: 2.5rem 0;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .stat-callout-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .stat-callout-num {
+      font-family: var(--font-display);
+      font-size: 2.4rem;
+      letter-spacing: 0.06em;
+      color: var(--white);
+      line-height: 1;
+    }
+
+    .stat-callout-label {
+      font-size: 0.6rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* Ordered and unordered lists */
+    .post-body ul,
+    .post-body ol {
+      margin: 0 0 1.6rem 1.4rem;
+      color: rgba(255,255,255,0.65);
+      font-size: 0.9rem;
+      line-height: 1.85;
+    }
+
+    .post-body li { margin-bottom: 0.4rem; }
+
+    /* Horizontal rule */
+    .post-body hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 3rem 0;
+    }
+
+    /* ─── Post footer / tags ───────────────────────────────────── */
+    .post-footer {
+      max-width: var(--content-w);
+      margin: 0 auto;
+      padding: 0 2rem 5rem;
+      border-top: 1px solid var(--border);
+      padding-top: 2rem;
+    }
+
+    .post-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .post-tag-pill {
+      font-size: 0.6rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      padding: 0.3rem 0.9rem;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .post-tag-pill:hover { color: var(--white); border-color: rgba(255,255,255,0.3); }
+
+    /* Back to blog */
+    .post-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s, gap 0.2s;
+    }
+
+    .post-back:hover { color: var(--white); gap: 0.8rem; }
+
+    /* ─── Related posts ────────────────────────────────────────── */
+    .related-posts {
+      background: var(--off-black);
+      border-top: 1px solid var(--border);
+      padding: 5rem 2.5rem;
+    }
+
+    .related-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .related-eyebrow {
+      font-size: 0.6rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 2.5rem;
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3px;
+    }
+
+    .related-card {
+      background: var(--dark);
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      transition: border-color 0.25s;
+    }
+
+    .related-card:hover { border-color: rgba(255,255,255,0.2); }
+    .related-card:hover .related-img { transform: scale(1.04); }
+
+    .related-img-wrap {
+      overflow: hidden;
+      aspect-ratio: 16/9;
+      background: var(--mid);
+      flex-shrink: 0;
+    }
+
+    .related-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s cubic-bezier(0.16,1,0.3,1);
+    }
+
+    .related-img-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      color: rgba(255,255,255,0.06);
+    }
+
+    .related-body {
+      padding: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      flex: 1;
+    }
+
+    .related-tag {
+      font-size: 0.55rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .related-title {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      letter-spacing: 0.04em;
+      line-height: 1.1;
+      color: var(--white);
+    }
+
+    .related-date {
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.2);
+      margin-top: auto;
+      padding-top: 0.8rem;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ─── CTA strip ────────────────────────────────────────────── */
+    .post-cta {
+      background: var(--black);
+      border-top: 1px solid var(--border);
+      padding: 4rem 2.5rem;
+      text-align: center;
+    }
+
+    .post-cta p {
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.8rem;
+    }
+
+    .post-cta h3 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      letter-spacing: 0.08em;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      font-size: 0.7rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--black);
+      background: var(--white);
+      padding: 1rem 2.8rem;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: background 0.25s, color 0.25s;
+    }
+
+    .btn-primary:hover { background: var(--accent); color: var(--white); }
+
+    /* ─── Footer ───────────────────────────────────────────────── */
+    footer {
+      padding: 2rem 2.5rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    footer p, footer a {
+      font-size: 0.6rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.15);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    footer a:hover { color: var(--white); }
+
+    /* ─── CS Mobile menu ───────────────────────────────────────── */
+    @media only screen and (max-width: 768px) {
+      body.cs-open { overflow: hidden; }
+
+      #nav::before {
+        content: '';
+        width: 100%;
+        height: 0vh;
+        background: rgba(0,0,0,0.7);
+        opacity: 0;
+        display: block;
+        position: absolute;
+        top: 100%; right: 0; z-index: -1;
+        transition: height 0.5s, opacity 0.5s;
+        backdrop-filter: blur(6px);
+      }
+
+      #nav.cs-active::before { height: 150vh; opacity: 1; }
+
+      .cs-toggle {
+        display: flex;
+        width: clamp(2.8rem, 7vw, 3.2rem);
+        height: clamp(2.8rem, 7vw, 3.2rem);
+        margin-left: auto;
+        background-color: var(--accent);
+        border: none; border-radius: 0.25rem;
+        justify-content: center; align-items: center;
+        cursor: pointer; transition: transform 0.6s;
+        flex-shrink: 0; position: relative; z-index: 200;
+      }
+
+      .cs-toggle.cs-active { transform: rotate(180deg); }
+
+      .cs-box { width: clamp(1.4rem, 2vw, 1.6rem); height: 1rem; position: relative; display: block; }
+
+      .cs-line { width: 100%; height: 2px; background-color: var(--white); border-radius: 2px; position: absolute; left: 50%; transform: translateX(-50%); }
+      .cs-line1 { top: 0; transform-origin: center; transition: transform 0.5s ease, top 0.3s ease; }
+      .cs-line2 { top: 50%; transform: translateX(-50%) translateY(-50%); transform-origin: center; transition: top 0.3s ease, transform 0.5s ease, opacity 0.2s ease; }
+      .cs-line3 { bottom: 0; transition: bottom 0.3s ease, opacity 0.3s ease; }
+
+      #nav.cs-active .cs-line1 { top: 50%; transform: translate(-50%, -50%) rotate(225deg); }
+      #nav.cs-active .cs-line2 { top: 50%; transform: translate(-50%, -50%) rotate(-225deg); opacity: 0; }
+      #nav.cs-active .cs-line3 { bottom: 100%; opacity: 0; }
+
+      .cs-ul-wrapper {
+        width: 100vw; height: 100vh;
+        background: var(--black);
+        position: fixed; top: 0; left: 0; z-index: 99;
+        display: flex; flex-direction: column;
+        justify-content: space-between;
+        padding: 6rem 2rem 3rem;
+        opacity: 0; pointer-events: none;
+        transform: translateY(-12px);
+        transition: opacity 0.4s cubic-bezier(0.16,1,0.3,1), transform 0.4s cubic-bezier(0.16,1,0.3,1);
+      }
+
+      .cs-ul-wrapper::before {
+        content: 'Professional debut';
+        display: block; position: absolute;
+        top: 1.8rem; left: 2rem;
+        font-size: 0.6rem; letter-spacing: 0.24em;
+        text-transform: uppercase; color: var(--accent);
+        font-family: var(--font-body);
+        opacity: 0; transform: translateY(8px);
+        transition: opacity 0.4s 0.2s ease, transform 0.4s 0.2s ease;
+      }
+
+      #nav.cs-active .cs-ul-wrapper::before { opacity: 1; transform: translateY(0); }
+      #nav.cs-active .cs-ul-wrapper { opacity: 1; pointer-events: all; transform: translateY(0); transition-delay: 0.05s; }
+
+      .cs-ul { margin: 0; padding: 0; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 0; list-style: none; flex: 1; }
+
+      .cs-li { width: 100%; border-bottom: 1px solid var(--border); transform: translateY(20px); opacity: 0; transition: transform 0.5s cubic-bezier(0.16,1,0.3,1), opacity 0.4s ease; }
+      .cs-li:first-child { border-top: 1px solid var(--border); }
+      .cs-li:nth-of-type(1) { transition-delay: 0.1s; }
+      .cs-li:nth-of-type(2) { transition-delay: 0.16s; }
+      .cs-li:nth-of-type(3) { transition-delay: 0.22s; }
+      .cs-li:nth-of-type(4) { transition-delay: 0.28s; }
+      .cs-li:nth-of-type(5) { transition-delay: 0.34s; }
+
+      #nav.cs-active .cs-li { opacity: 1; transform: translateY(0); }
+
+      .cs-li-link { font-family: var(--font-display); font-size: clamp(3rem, 12vw, 5rem); letter-spacing: 0.06em; text-decoration: none; color: rgba(255,255,255,0.18); display: block; padding: 0.4rem 0; line-height: 1.1; transition: color 0.2s, letter-spacing 0.3s; }
+      .cs-li-link:hover { color: var(--white); letter-spacing: 0.1em; }
+
+      .cs-menu-footer { display: flex; flex-direction: column; gap: 1rem; opacity: 0; transform: translateY(10px); transition: opacity 0.4s 0.35s ease, transform 0.4s 0.35s ease; }
+      #nav.cs-active .cs-menu-footer { opacity: 1; transform: translateY(0); }
+
+      .cs-menu-notify { display: block; text-align: center; font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; color: var(--black); background: var(--white); padding: 1rem; text-decoration: none; border-radius: 2px; transition: background 0.2s, color 0.2s; }
+      .cs-menu-notify:hover { background: var(--accent); color: var(--white); }
+
+      .cs-menu-socials { display: flex; align-items: center; justify-content: center; gap: 1rem; }
+      .cs-menu-social-link { color: rgba(255,255,255,0.3); text-decoration: none; display: flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; transition: color 0.2s, border-color 0.2s; }
+      .cs-menu-social-link:hover { color: var(--white); border-color: rgba(255,255,255,0.35); }
+
+      .cs-menu-creds { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 0.4rem; font-size: 0.58rem; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.18); font-family: var(--font-body); }
+      .cs-menu-creds span.dot { color: rgba(255,255,255,0.1); }
+
+      .cs-toggle { display: flex; }
+      .nav-links { display: none; }
+      .nav-ticket { display: none; }
+      .cs-ul-wrapper { display: flex; }
+    }
+
+    /* ─── Responsive ───────────────────────────────────────────── */
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.25rem; }
+
+      .post-hero-img,
+      .post-hero-placeholder { height: 40vh; min-height: 260px; }
+
+      .post-header,
+      .post-body,
+      .post-footer { padding-left: 1.25rem; padding-right: 1.25rem; }
+
+      .post-image { margin: 2rem -1.25rem; }
+
+      .post-byline { flex-wrap: wrap; gap: 0.8rem; }
+      .post-share { width: 100%; }
+
+      .related-posts { padding: 3rem 1.25rem; }
+      .related-grid { grid-template-columns: 1fr; }
+
+      .post-cta { padding: 3rem 1.25rem; }
+
+      footer { flex-direction: column; gap: 0.5rem; text-align: center; padding: 1.5rem 1.25rem; }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .related-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- ─── Nav ─────────────────────────────────────────────────── -->
+  <nav id="nav">
+    <a href="../index.html" class="nav-logo">
+      <img src="../logo.png" alt="Mitchell Asare" height="36" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+      <span class="nav-logo-fallback">Mitchell Asare</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#fight">Fight night</a></li>
+      <li><a href="../index.html#gallery">Gallery</a></li>
+      <li><a href="../blog.html" class="active">Blog</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <a href="../index.html#fight" class="nav-ticket">Notify me</a>
+    <button class="cs-toggle" id="cs-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="cs-ul-wrapper">
+      <span class="cs-box" aria-hidden="true">
+        <span class="cs-line cs-line1"></span>
+        <span class="cs-line cs-line2"></span>
+        <span class="cs-line cs-line3"></span>
+      </span>
+    </button>
+    <div class="cs-ul-wrapper" id="cs-ul-wrapper">
+      <ul class="cs-ul">
+        <li class="cs-li"><a href="../index.html#about"   class="cs-li-link">About</a></li>
+        <li class="cs-li"><a href="../index.html#fight"   class="cs-li-link">Fight night</a></li>
+        <li class="cs-li"><a href="../index.html#gallery" class="cs-li-link">Gallery</a></li>
+        <li class="cs-li"><a href="../blog.html"          class="cs-li-link">Blog</a></li>
+        <li class="cs-li"><a href="../index.html#contact" class="cs-li-link">Contact</a></li>
+      </ul>
+      <div class="cs-menu-footer">
+        <a href="../index.html#fight" class="cs-menu-notify">Notify me</a>
+        <div class="cs-menu-socials">
+          <a href="#" class="cs-menu-social-link" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="cs-menu-social-link" aria-label="TikTok" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          </a>
+          <a href="#" class="cs-menu-social-link" aria-label="YouTube" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+        <div class="cs-menu-creds">
+          <span>6x London Champion</span><span class="dot">·</span>
+          <span>70+ fights</span><span class="dot">·</span>
+          <span>Pro debut</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── Post hero image ───────────────────────────────────────── -->
+  <div class="post-hero">
+    
+      
+      <img class="post-hero-img" src="../assets/images/gallery/pics/7.jpeg" alt="Mitchell Asare announces professional debut" />
+   
+    <!-- <div class="post-hero-placeholder">BOXING</div> -->
+    <div class="post-hero-overlay"></div>
+  </div>
+
+  <!-- ─── Post header ───────────────────────────────────────────── -->
+  <div class="post-header">
+
+    <div class="post-breadcrumb">
+      <a href="../blog.html">Blog</a>
+      <span class="post-breadcrumb-sep">›</span>
+      <span>Fight news</span>
+    </div>
+
+    <span class="post-tag-label">Fight news</span>
+
+    <h1 class="post-headline">The announcement —<br>turning professional</h1>
+
+    <p class="post-standfirst">
+      After eight years, 70+ amateur fights, and six London titles — the decision has been made. Here's what turning professional means, what comes next, and why now is the right time.
+    </p>
+
+    <div class="post-byline">
+      <div class="post-byline-avatar">
+        
+      
+          <img src="../assets/images/avatar.png" alt="Mitchell Asare" />
+       
+        <div class="post-byline-avatar-placeholder">[F]</div>
+      </div>
+      <div class="post-byline-info">
+        <div class="post-byline-name">Mitchell Asare</div>
+        <!-- <div class="post-byline-meta">[Month Day, Year] · 4 min read</div> -->
+      </div>
+      <!-- <div class="post-share">
+        <span class="post-share-label">Share</span>
+        <a href="#" class="share-btn" aria-label="Share on Twitter" onclick="sharePost('twitter')">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.736-8.859L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="#" class="share-btn" aria-label="Share on Facebook" onclick="sharePost('facebook')">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <button class="share-btn" aria-label="Copy link" onclick="copyLink()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        </button>
+      </div> -->
+    </div>
+
+  </div>
+
+  <!-- ─── Post body ─────────────────────────────────────────────── -->
+  <!-- ════════════════════════════════════════════════════════════
+       WRITE YOUR POST CONTENT BELOW
+       Available elements:
+         <p>             — paragraph
+         <h2>            — section heading
+         <h3>            — sub heading
+         <blockquote class="pull-quote"> — large pull quote
+         <figure class="post-image">    — inline image
+         <div class="stat-callout">     — stat highlight box
+         <ul> / <ol>     — lists
+         <hr>            — divider
+       ════════════════════════════════════════════════════════════ -->
+  <div class="post-body">
+
+    <p>
+      Eight years ago, I walked into a gym for the first time. I didn't know what I was doing, I didn't know where it would lead, and I certainly didn't know I'd end up here — announcing my first professional fight. But that's the thing about boxing. It takes you somewhere if you let it.
+    </p>
+
+    <p>
+      Six London Amateur Championships. An International Box Cup silver medal. An Elite ABA Final. 70+ fights. Those numbers don't feel like numbers to me — they feel like early mornings, sore hands, weight cuts, bus journeys to venues across the country, and every single person who believed in me along the way.
+    </p>
+
+    <!-- Stat callout box -->
+    <div class="stat-callout">
+      <div class="stat-callout-item">
+        <span class="stat-callout-num">70+</span>
+        <span class="stat-callout-label">Amateur fights</span>
+      </div>
+      <div class="stat-callout-item">
+        <span class="stat-callout-num">6×</span>
+        <span class="stat-callout-label">London Champion</span>
+      </div>
+      <div class="stat-callout-item">
+        <span class="stat-callout-num">8</span>
+        <span class="stat-callout-label">Years competing</span>
+      </div>
+    </div>
+
+    <h2>Why now</h2>
+
+    <p>
+      The honest answer is that I've been ready for a while. The amateur game gave me everything — structure, discipline, the foundation of everything I know about boxing. But there's a ceiling. And I've been standing at that ceiling long enough to know it's time to go through it.
+    </p>
+
+    <p>
+      Turning professional isn't a step away from what I've built. It's the next chapter of the same story. The same work ethic, the same commitment, the same hunger — just in a different arena now.
+    </p>
+
+    <!-- Pull quote -->
+    <blockquote class="pull-quote">
+      "There's a ceiling in the amateur game. I've been standing at it long enough to know it's time to go through it."
+      <cite>— Mitchell Asare</cite>
+    </blockquote>
+
+    <!-- Inline image -->
+    <figure class="post-image">
+      
+   
+        <img src="../assets/images/gallery/pics/7.jpeg" alt="Mitchell Asare in training" />
+     
+      <!-- <div class="post-image-placeholder">Training photo — replace with real image</div> -->
+      <figcaption>In the gym — the place where everything starts.</figcaption>
+    </figure>
+
+    <h2>What comes next</h2>
+
+    <p>
+      The debut is confirmed. The date is set. The venue is booked. Over the coming weeks I'll be sharing more about the preparation — the training camp, the weight, the mindset going into fight night — right here on this blog.
+    </p>
+
+    <p>
+      If you've supported me through the amateur years, this is what it's been building to. If you're new here — welcome. You've arrived at the right moment.
+    </p>
+
+    <h3>Get your tickets</h3>
+
+    <p>
+      Tickets for the debut are available now. The venue has limited capacity and I want to see as many familiar faces as possible in that crowd on fight night. The link is at the top of every page on this site.
+    </p>
+
+    <hr>
+
+    <p>
+      More soon. Train hard. Stay sharp.
+    </p>
+
+  </div>
+
+  <!-- ─── Post footer / tags ────────────────────────────────────── -->
+  <div class="post-footer">
+    <div class="post-tags">
+      <a href="../blog.html" class="post-tag-pill">Fight news</a>
+      <a href="../blog.html" class="post-tag-pill">Professional debut</a>
+      <a href="../blog.html" class="post-tag-pill">London boxing</a>
+      <a href="../blog.html" class="post-tag-pill">Amateur boxing</a>
+    </div>
+    <a href="../blog.html" class="post-back">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      Back to blog
+    </a>
+  </div>
+
+  <!-- ─── Related posts ─────────────────────────────────────────── -->
+  <section class="related-posts">
+    <div class="related-inner">
+      <p class="related-eyebrow">Continue reading</p>
+      <div class="related-grid">
+
+        <a href="six-london-titles.html" class="related-card">
+          <div class="related-img-wrap">
+            <div class="related-img-placeholder">02</div>
+          </div>
+          <div class="related-body">
+            <span class="related-tag">The journey</span>
+            <h3 class="related-title">Six London titles — how it happened</h3>
+            <div class="related-date">[Month Day, Year] · 5 min read</div>
+          </div>
+        </a>
+
+        <a href="training-week.html" class="related-card">
+          <div class="related-img-wrap">
+            <div class="related-img-placeholder">03</div>
+          </div>
+          <div class="related-body">
+            <span class="related-tag">Training</span>
+            <h3 class="related-title">A week in the gym before fight night</h3>
+            <div class="related-date">[Month Day, Year] · 3 min read</div>
+          </div>
+        </a>
+
+        <a href="amateur-vs-pro.html" class="related-card">
+          <div class="related-img-wrap">
+            <div class="related-img-placeholder">04</div>
+          </div>
+          <div class="related-body">
+            <span class="related-tag">Boxing</span>
+            <h3 class="related-title">Amateur vs professional boxing — what changes</h3>
+            <div class="related-date">[Month Day, Year] · 4 min read</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA strip ─────────────────────────────────────────────── -->
+  <div class="post-cta">
+    <p>Fight night</p>
+    <h3>Be there for the debut</h3>
+    <a href="../index.html#fight" class="btn-primary">Get tickets</a>
+  </div>
+
+  <!-- ─── Footer ───────────────────────────────────────────────── -->
+  <footer>
+    <p>&copy; 2026 Mitchell Asare. All rights reserved.</p>
+    <a href="../blog.html">← Back to blog</a>
+  </footer>
+
+  <script src="/js/config.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/post.js"></script>
+</body>
+</html>
