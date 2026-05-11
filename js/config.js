@@ -6,9 +6,9 @@ const CONFIG = {
 
   // ── Fight ──────────────────────────────────────────────────
   fightDate:     '2026-06-27T18:00:00',
-  venue:         '[Venue Name]',
-  venueAddress:  '[Address], London',
-  doorsOpen:     '18:00',
+  venue:         'HARROW LESUIRE CENTRE',
+  venueAddress:  'Christchurch Ave, Harrow HA3 5BD',
+  doorsOpen:     '17:00 PM',
   firstBout:     '18:30',
 
   // ── Tickets ────────────────────────────────────────────────
@@ -19,7 +19,7 @@ const CONFIG = {
     standard: {
       price:       50,
       label:       'General Admission',
-      remaining:   100,
+      remaining:  1,
       capacity:    100,
       soldOut: false,
       tailor_url:  'ticket tailor url',

@@ -75,3 +75,62 @@ unmuteBtn.addEventListener('click', () => {
 });
 
 
+// index.js
+// function handleNewsletter(e) {
+//   e.preventDefault();
+//   const form  = e.target;
+//   const btn   = form.querySelector('button');
+//   const input = form.querySelector('input');
+
+//   btn.textContent = 'Subscribing…';
+//   btn.disabled    = true;
+
+//   if (CONFIG.newsletter.formspreeId !== 'YOUR_NEWSLETTER_ID') {
+//     fetch(`https://formspree.io/f/${CONFIG.newsletter.formspreeId}`, {
+//       method:  'POST',
+//       headers: { 'Accept': 'application/json' },
+//       body:    new FormData(form),
+//     }).then(() => showSuccess()).catch(() => showSuccess());
+//   } else {
+//     setTimeout(showSuccess, 600);
+//   }
+
+//   function showSuccess() {
+//     btn.textContent       = 'Subscribed ✓';
+//     btn.style.background  = '#1D9E75';
+//     btn.style.borderColor = '#1D9E75';
+//     btn.style.color       = '#fff';
+//     input.value           = '';
+//   }
+// }
+
+// index.js
+function applyFightMeta() {
+  const date = new Date(CONFIG.fightDate);
+  const formatted = date.toLocaleDateString('en-GB', {
+    weekday: 'long',
+    day:     'numeric',
+    month:   'long',
+    year:    'numeric',
+  });
+
+  // Update any element with data-fight attributes
+  document.querySelectorAll('[data-fight="date"]')
+    .forEach(el => el.textContent = formatted);
+  document.querySelectorAll('[data-fight="venue"]')
+    .forEach(el => el.textContent = CONFIG.venue);
+  document.querySelectorAll('[data-fight="doors"]')
+    .forEach(el => el.textContent = CONFIG.doorsOpen);
+}
+
+applyFightMeta();
+
+// Swap hero image on mobile
+function applyHeroImage() {
+  const img = document.getElementById('hero-img');
+  if (!img) return;
+  if (window.matchMedia('(max-width: 480px)').matches && img.dataset.mobile) {
+    img.src = img.dataset.mobile;
+  }
+}
+applyHeroImage();

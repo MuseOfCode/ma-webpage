@@ -1,12 +1,16 @@
 
    
-           // ── Wire all social links from single config ──────────────────
-    document.querySelectorAll('[aria-label="Instagram"]').forEach(el => el.href = CONFIG.social.instagram);
-    document.querySelectorAll('[aria-label="TikTok"]').forEach(el => el.href = CONFIG.social.tiktok);
-    document.querySelectorAll('[aria-label="YouTube"]').forEach(el => el.href = CONFIG.social.youtube);
+// nav.js — add this at the bottom of initNav()
+function wireSocials() {
+  document.querySelectorAll('[aria-label="Instagram"]')
+    .forEach(el => el.href = CONFIG.social.instagram);
+  document.querySelectorAll('[aria-label="TikTok"]')
+    .forEach(el => el.href = CONFIG.social.tiktok);
+  document.querySelectorAll('[aria-label="YouTube"]')
+    .forEach(el => el.href = CONFIG.social.youtube);
+}
+wireSocials();
 
-
-   
    // ── Social email form (section 06) ────────────────────────────
     function handleEmail(e) {
       e.preventDefault();
