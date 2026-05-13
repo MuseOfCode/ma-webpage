@@ -102,7 +102,13 @@ wireSocials();
       });
     })();
 
-     
 
- 
+    // Wire management info
+const mgmtName    = document.querySelector('.footer-management-name');
+const mgmtContact = document.querySelector('.footer-management-contact');
 
+if (mgmtName)    mgmtName.textContent = CONFIG.management.name;
+if (mgmtContact) {
+  mgmtContact.textContent = CONFIG.management.contact;
+  mgmtContact.href        = `mailto:${CONFIG.management.contact}`;
+}

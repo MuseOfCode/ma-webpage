@@ -383,4 +383,27 @@
     }
  
 
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
 
+.footer-legal {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.footer-legal a {
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.2);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-legal a:hover { color: var(--white); }

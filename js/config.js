@@ -5,7 +5,7 @@ const CONFIG = {
   fighterHandle: 'mitchellasare',
 
   // ── Fight ──────────────────────────────────────────────────
-  fightDate:     '2026-06-27T18:00:00',
+  fightDate:     '2026-06-27T17:00:00',
   venue:         'HARROW LESUIRE CENTRE',
   venueAddress:  'Christchurch Ave, Harrow HA3 5BD',
   doorsOpen:     '17:00 PM',
@@ -65,6 +65,11 @@ const CONFIG = {
   stance:      '???',
   gym:         'Whiteheart Lane',
   trainer:     '???',
+
+  management: {
+  name:    'Premier Promotions Management',
+  contact: 'www.premierpromotionsmanagement.com',
+},
 
 };
 
